@@ -31,7 +31,7 @@ importers:
         version: 9.37.0(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(next@15.3.5(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.54.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(webpack@5.100.0(esbuild@0.25.6))
       '@t3-oss/env-nextjs':
         specifier: ^0.13.8
-        version: 0.13.8(typescript@5.8.3)(zod@4.0.2)
+        version: 0.13.8(typescript@5.8.3)(zod@4.0.3)
       drizzle-orm:
         specifier: ^0.44.2
         version: 0.44.2(@electric-sql/pglite@0.3.4)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(pg@8.16.3)
@@ -57,8 +57,8 @@ importers:
         specifier: ^7.60.0
         version: 7.60.0(react@19.1.0)
       zod:
-        specifier: ^4.0.2
-        version: 4.0.2
+        specifier: ^4.0.3
+        version: 4.0.3
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.16.2
@@ -136,8 +136,8 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1(@types/node@24.0.12)(jiti@2.4.2)(typescript@5.8.3)
       conventional-changelog-conventionalcommits:
-        specifier: ^9.0.0
-        version: 9.0.0
+        specifier: ^9.1.0
+        version: 9.1.0
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -203,7 +203,7 @@ importers:
         version: 5.8.3
       unlighthouse:
         specifier: ^0.17.1
-        version: 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.2)
+        version: 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.3)
       vite-tsconfig-paths:
         specifier: ^5.1.4
         version: 5.1.4(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
@@ -4319,8 +4319,8 @@ packages:
     resolution: {integrity: sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==}
     engines: {node: '>=16'}
 
-  conventional-changelog-conventionalcommits@9.0.0:
-    resolution: {integrity: sha512-5e48V0+DsWvQBEnnbBFhYQwYDzFPXVrakGPP1uSxekDkr5d7YWrmaWsgJpKFR0SkXmxK6qQr9O42uuLb9wpKxA==}
+  conventional-changelog-conventionalcommits@9.1.0:
+    resolution: {integrity: sha512-MnbEysR8wWa8dAEvbj5xcBgJKQlX/m0lhS8DsyAAWDHdfs2faDJxTgzRYlRYpXSe7UiKrIIlB4TrBKU9q9DgkA==}
     engines: {node: '>=18'}
 
   conventional-changelog-writer@8.2.0:
@@ -9525,8 +9525,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.0.2:
-    resolution: {integrity: sha512-X2niJNY54MGam4L6Kj0AxeedeDIi/E5QFW0On2faSX5J4/pfLk1tW+cRMIMoojnCavn/u5W/kX17e1CSGnKMxA==}
+  zod@4.0.3:
+    resolution: {integrity: sha512-V78FonTAxtGAyF2xR75x0YoW8uKXdQiusoPtzbT07vH3mZiGdTQN6INuivHyYT6M2V2YRFDEKIF4ylTJh54EXg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -11034,7 +11034,7 @@ snapshots:
       pathe: 2.0.3
       std-env: 3.9.0
 
-  '@nuxt/ui@3.2.0(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.2)':
+  '@nuxt/ui@3.2.0(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.3)':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.17(typescript@5.8.3))
       '@internationalized/date': 3.8.2
@@ -11080,7 +11080,7 @@ snapshots:
       vaul-vue: 0.4.1(reka-ui@2.3.1(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))
       vue-component-type-helpers: 2.2.12
     optionalDependencies:
-      zod: 4.0.2
+      zod: 4.0.3
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -12810,17 +12810,17 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@t3-oss/env-core@0.13.8(typescript@5.8.3)(zod@4.0.2)':
+  '@t3-oss/env-core@0.13.8(typescript@5.8.3)(zod@4.0.3)':
     optionalDependencies:
       typescript: 5.8.3
-      zod: 4.0.2
+      zod: 4.0.3
 
-  '@t3-oss/env-nextjs@0.13.8(typescript@5.8.3)(zod@4.0.2)':
+  '@t3-oss/env-nextjs@0.13.8(typescript@5.8.3)(zod@4.0.3)':
     dependencies:
-      '@t3-oss/env-core': 0.13.8(typescript@5.8.3)(zod@4.0.2)
+      '@t3-oss/env-core': 0.13.8(typescript@5.8.3)(zod@4.0.3)
     optionalDependencies:
       typescript: 5.8.3
-      zod: 4.0.2
+      zod: 4.0.3
 
   '@tailwindcss/node@4.1.11':
     dependencies:
@@ -13225,10 +13225,10 @@ snapshots:
       unhead: 2.0.12
       vue: 3.5.17(typescript@5.8.3)
 
-  '@unlighthouse/cli@0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.2)':
+  '@unlighthouse/cli@0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.3)':
     dependencies:
       '@lhci/utils': 0.15.1
-      '@unlighthouse/client': 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.2)
+      '@unlighthouse/client': 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.3)
       '@unlighthouse/core': 0.17.1(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)
       '@unlighthouse/server': 0.17.1(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)
       better-opn: 3.0.2
@@ -13291,10 +13291,10 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/client@0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.2)':
+  '@unlighthouse/client@0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.3)':
     dependencies:
       '@headlessui/vue': 1.7.23(vue@3.5.17(typescript@5.8.3))
-      '@nuxt/ui': 3.2.0(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.2)
+      '@nuxt/ui': 3.2.0(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.3)
       '@tailwindcss/vite': 4.1.11(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
       dayjs: 1.11.13
       defu: 6.1.4
@@ -14557,7 +14557,7 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-conventionalcommits@9.0.0:
+  conventional-changelog-conventionalcommits@9.1.0:
     dependencies:
       compare-func: 2.0.0
 
@@ -19709,10 +19709,10 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unlighthouse@0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.2):
+  unlighthouse@0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(zod@4.0.3):
     dependencies:
-      '@unlighthouse/cli': 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.2)
-      '@unlighthouse/client': 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.2)
+      '@unlighthouse/cli': 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.3)
+      '@unlighthouse/client': 0.17.1(@babel/parser@7.28.0)(axios@1.10.0)(embla-carousel@8.6.0)(magicast@0.3.5)(typescript@5.8.3)(vite@7.0.4(@types/node@24.0.12)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(zod@4.0.3)
       '@unlighthouse/core': 0.17.1(magicast@0.3.5)(puppeteer@24.12.1(typescript@5.8.3))(rollup@4.35.0)
     optionalDependencies:
       puppeteer: 24.12.1(typescript@5.8.3)
@@ -20417,6 +20417,6 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.0.2: {}
+  zod@4.0.3: {}
 
   zwitch@2.0.4: {}
