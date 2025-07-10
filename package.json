@@ -1,11 +1,10 @@
 {
-  "name": "next-js-boilerplate",
-  "author": "Ixartz (https://github.com/ixartz)",
+  "name": "essencek",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "dev:spotlight": "npx @spotlightjs/sidecar",
+    "dev:spotlight": "pnpx @spotlightjs/sidecar",
     "dev:next": "next dev --turbopack",
     "dev": "run-p db-server:file dev:*",
     "build:next": "next build",

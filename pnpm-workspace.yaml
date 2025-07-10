@@ -1,0 +1,13 @@
+onlyBuiltDependencies:
+  - '@clerk/shared'
+  - '@parcel/watcher'
+  - '@sentry/cli'
+  - '@tailwindcss/oxide'
+  - core-js
+  - esbuild
+  - lefthook
+  - oxc-resolver
+  - puppeteer
+  - sharp
+  - vue-demi
+  - yarn
