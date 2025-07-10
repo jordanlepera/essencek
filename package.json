@@ -31,7 +31,7 @@
     "test:lighthouse": "run-p start lighthouse --race"
   },
   "dependencies": {
-    "@arcjet/next": "^1.0.0-beta.8",
+    "@arcjet/next": "1.0.0-beta.9",
     "@clerk/localizations": "^3.18.0",
     "@clerk/nextjs": "^6.24.0",
     "@electric-sql/pglite": "^0.3.4",
