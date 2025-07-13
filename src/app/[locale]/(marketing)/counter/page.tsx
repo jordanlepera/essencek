@@ -1,9 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import { Suspense } from 'react';
 import { CounterForm } from '@/components/CounterForm';
-import { CurrentCount } from '@/components/CurrentCount';
 
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -26,12 +24,6 @@ export default function Counter() {
   return (
     <>
       <CounterForm />
-
-      <div className="mt-3">
-        <Suspense fallback={<p>{t('loading_counter')}</p>}>
-          <CurrentCount />
-        </Suspense>
-      </div>
 
       <div className="mt-5 text-center text-sm">
         {`${t('security_powered_by')} `}
