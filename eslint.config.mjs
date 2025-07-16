@@ -25,9 +25,10 @@ export default antfu(
     },
 
     // Ignored paths
-    // ignores: [
-    //   'migrations/**/*',
-    // ],
+    ignores: [
+      'migrations/**/*',
+      'ai/**/*',
+    ],
   },
   // --- Next.js Specific Rules ---
   {
