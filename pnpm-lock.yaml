@@ -11,9 +11,6 @@ importers:
       '@arcjet/next':
         specifier: 1.0.0-beta.9
         version: 1.0.0-beta.9(next@15.3.5(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.54.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@electric-sql/pglite':
-        specifier: ^0.3.4
-        version: 0.3.4
       '@hookform/resolvers':
         specifier: ^5.1.1
         version: 5.1.1(react-hook-form@7.60.0(react@19.1.0))
@@ -69,9 +66,6 @@ importers:
       '@commitlint/types':
         specifier: ^19.8.1
         version: 19.8.1
-      '@electric-sql/pglite-socket':
-        specifier: ^0.0.9
-        version: 0.0.9(@electric-sql/pglite@0.3.4)
       '@eslint-react/eslint-plugin':
         specifier: ^1.52.2
         version: 1.52.2(eslint@9.30.1(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3)
@@ -559,15 +553,6 @@ packages:
 
   '@dprint/toml@0.6.4':
     resolution: {integrity: sha512-bZXIUjxr0LIuHWshZr/5mtUkOrnh0NKVZEF6ACojW5z7zkJu7s9sV2mMXm8XQDqN4cJzdHYUYzUyEGdfciaLJA==}
-
-  '@electric-sql/pglite-socket@0.0.9':
-    resolution: {integrity: sha512-vB/FlCxkua6qzBIHMmZZY/uY8yZy89PlLiJ8YpbFr4+hxDCpe8wHL1uIP+Y2MWX87jQN5LcYqje6yNZ/8ZK3IA==}
-    hasBin: true
-    peerDependencies:
-      '@electric-sql/pglite': 0.3.4
-
-  '@electric-sql/pglite@0.3.4':
-    resolution: {integrity: sha512-h5hoL2GuxcWN8Q3+jtesIRem14iIvAZVEsTeUF6eO9RiUb6ar73QVIEW9t+Ud58iXAcAE2dFMtWqw3W2Oo4LDw==}
 
   '@emnapi/core@1.4.4':
     resolution: {integrity: sha512-A9CnAbC6ARNMKcIcrQwq6HeHCjpcBZ5wSx4U01WXCqEKlrzB9F9315WDNHkrs2xbx7YjjSxbUYxuN6EQzpcY2g==}
@@ -9666,12 +9651,6 @@ snapshots:
   '@dprint/markdown@0.17.8': {}
 
   '@dprint/toml@0.6.4': {}
-
-  '@electric-sql/pglite-socket@0.0.9(@electric-sql/pglite@0.3.4)':
-    dependencies:
-      '@electric-sql/pglite': 0.3.4
-
-  '@electric-sql/pglite@0.3.4': {}
 
   '@emnapi/core@1.4.4':
     dependencies:
