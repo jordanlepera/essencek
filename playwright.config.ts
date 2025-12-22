@@ -29,7 +29,7 @@ export default defineConfig<ChromaticConfig>({
   // Run your local dev server before starting the tests:
   // https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
   webServer: {
-    command: process.env.CI ? 'npm run start' : 'npx run-p dev:next',
+    command: process.env.CI ? 'bun run start' : 'bunx run-p dev:next',
     url: baseURL,
     timeout: 2 * 60 * 1000,
     reuseExistingServer: !process.env.CI,
