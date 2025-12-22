@@ -34,7 +34,7 @@
     "@logtape/logtape": "^1.0.4",
     "@sentry/nextjs": "^9.37.0",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "next": "^15.3.5",
+    "next": "15.3.8",
     "next-intl": "^4.3.4",
     "posthog-js": "^1.257.0",
     "react": "19.1.0",
