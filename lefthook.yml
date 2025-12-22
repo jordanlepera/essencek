@@ -2,17 +2,17 @@
 commit-msg:
   commands:
     commitlint:
-      run: npx --no -- commitlint --edit {1}
+      run: bunx --no -- commitlint --edit {1}
 
 # Validate content before committing
 pre-commit:
   commands:
     lint:
       glob: '*'
-      run: npx --no -- eslint --fix --no-warn-ignored
+      run: bunx --no -- eslint --fix --no-warn-ignored
       stage_fixed: true
       priority: 1
     check-types:
       glob: '*.{ts,tsx}'
-      run: npm run check:types
+      run: bunx --no -- tsc --noEmit
       priority: 2

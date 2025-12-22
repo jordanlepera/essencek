@@ -30,10 +30,10 @@ jobs:
           path: |
             .next/cache
           # Generate a new cache whenever packages or source files change.
-          key: nextjs-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('src/**') }}
+          key: nextjs-${{ matrix.node-version }}-${{ hashFiles('**/bun.lockb') }}-${{ hashFiles('src/**') }}
 
       - name: Build Next.js
-        run: npm run build
+        run: bun run build
         env:
           NEXT_PUBLIC_SENTRY_DISABLED: 'true' # Only upload Sentry source maps in deployment
 
@@ -65,19 +65,19 @@ jobs:
 
       - if: github.event_name == 'pull_request'
         name: Validate all commits from PR
-        run: npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
+        run: bunx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
 
       - name: Linter
-        run: npm run lint
+        run: bun run lint
 
       - name: Type checking
-        run: npm run check:types
+        run: bun run check:types
 
       - name: Check dependencies
-        run: npm run check:deps
+        run: bun run check:deps
 
       - name: I18n check
-        run: npm run check:i18n
+        run: bun run check:i18n
 
   unit:
     strategy:
@@ -99,7 +99,7 @@ jobs:
       - name: Run unit tests
         uses: docker://mcr.microsoft.com/playwright:v1.54.0
         with:
-          args: npm run test -- --coverage
+          args: bun run test -- --coverage
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
@@ -126,7 +126,7 @@ jobs:
       - name: Run storybook tests
         uses: docker://mcr.microsoft.com/playwright:v1.54.0
         with:
-          args: npm run storybook:test
+          args: bun run storybook:test
 
   e2e:
     strategy:
@@ -151,7 +151,7 @@ jobs:
       - name: Run E2E tests
         uses: docker://mcr.microsoft.com/playwright:v1.54.0
         with:
-          args: sh -c "HOME=/root npm run test:e2e" # Set HOME to /root to avoid Playwright error with Firebox
+          args: sh -c "HOME=/root bun run test:e2e" # Set HOME to /root to avoid Playwright error with Firebox
         env:
           CLERK_SECRET_KEY: ${{ secrets.CLERK_SECRET_KEY }}
 
@@ -195,7 +195,7 @@ jobs:
 
       - name: Run unlighthouse
         run: |
-          npm run test:lighthouse
+          bun run test:lighthouse
 
   synchronize-with-crowdin:
     name: GitHub PR synchronize with Crowdin

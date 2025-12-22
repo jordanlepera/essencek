@@ -25,9 +25,24 @@ export default antfu(
     },
 
     // Ignored paths
-    // ignores: [
-    //   'migrations/**/*',
-    // ],
+    ignores: [
+      'migrations/**/*',
+      'ai/**/*',
+      'node_modules/**/*',
+      '.next/**/*',
+      'out/**/*',
+      'dist/**/*',
+      'build/**/*',
+      'coverage/**/*',
+      'pnpm-store/**/*',
+      '.pnpm-store/**/*',
+      '**/pnpm-store/**/*',
+      '**/.pnpm-store/**/*',
+      'test-results/**/*',
+      '.vercel/**/*',
+      '.turbo/**/*',
+      'storybook-static/**/*',
+    ],
   },
   // --- Next.js Specific Rules ---
   {
