@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-import { redirect } from '@/libs/I18nNavigation';
+import { HomeClient } from '@/components/home/HomeClient';
 
 type IIndexProps = {
   params: Promise<{ locale: string }>;
@@ -20,6 +20,9 @@ export async function generateMetadata(props: IIndexProps): Promise<Metadata> {
   };
 }
 
-export default function Index() {
-  redirect('/accueil' as any);
+export default async function Index(props: IIndexProps) {
+  const { locale } = await props.params;
+  setRequestLocale(locale);
+
+  return <HomeClient params={props.params} />;
 }

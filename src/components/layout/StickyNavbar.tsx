@@ -24,7 +24,7 @@ export const StickyNavbar = () => {
   }, []);
 
   const navLinks = [
-    { href: '/accueil', label: t('home_link') },
+    { href: '/', label: t('home_link') },
     { href: '/services', label: t('services_link') },
     { href: '/realisations', label: t('realisations_link') },
     { href: '/histoire', label: t('history_link') },
@@ -40,7 +40,7 @@ export const StickyNavbar = () => {
         )}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/accueil" className="text-2xl font-bold tracking-tight text-primary">
+          <Link href="/" className="text-2xl font-bold tracking-tight text-primary">
             L'Essence K
           </Link>
 

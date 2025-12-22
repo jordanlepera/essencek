@@ -20,7 +20,7 @@ export const ServiceDetail = ({ title, description, features }: ServiceDetailPro
         animate={{ opacity: 1, x: 0 }}
         className="flex items-center gap-2"
       >
-        <Link href="/accueil">
+        <Link href="/">
           <Button variant="ghost" size="sm" className="flex gap-1 items-center">
             <ChevronLeft className="h-4 w-4" />
             {' '}

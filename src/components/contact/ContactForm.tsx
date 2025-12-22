@@ -44,8 +44,7 @@ export const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof contactFormSchema>) {
-    console.log(values);
+  function onSubmit(_values: z.infer<typeof contactFormSchema>) {
     setIsSubmitted(true);
   }
 
