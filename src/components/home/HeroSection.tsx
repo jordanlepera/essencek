@@ -1,19 +1,44 @@
 'use client';
 
+import type { CarouselApi } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Carousel,
+
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 import { Link } from '@/libs/I18nNavigation';
 
 export const HeroSection = () => {
   const t = useTranslations('Index');
+
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+
+  const autoplay = React.useRef(
+    Autoplay({ delay: 10000, stopOnInteraction: false }),
+  );
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
+    setCurrent(api.selectedScrollSnap());
+
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   const slides = [
     {
@@ -35,7 +60,12 @@ export const HeroSection = () => {
 
   return (
     <section className="relative w-full overflow-hidden rounded-3xl h-[70vh] min-h-[500px]">
-      <Carousel className="w-full h-full" opts={{ loop: true }}>
+      <Carousel
+        className="w-full h-full"
+        opts={{ loop: true }}
+        plugins={[autoplay.current]}
+        setApi={setApi}
+      >
         <CarouselContent className="h-full ml-0">
           {slides.map(slide => (
             <CarouselItem key={slide.title} className="pl-0 h-[70vh] min-h-[500px]">
@@ -84,9 +114,25 @@ export const HeroSection = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute bottom-8 right-16 flex gap-2">
-          <CarouselPrevious className="static translate-y-0" />
-          <CarouselNext className="static translate-y-0" />
+
+        {/* Navigation Arrows */}
+        <div className="absolute bottom-8 right-16 flex gap-2 md:flex">
+          <CarouselPrevious className="static translate-y-0 bg-white/10 hover:bg-white/20 border-white/20 text-white backdrop-blur-sm" />
+          <CarouselNext className="static translate-y-0 bg-white/10 hover:bg-white/20 border-white/20 text-white backdrop-blur-sm" />
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
+          {slides.map((slide, index) => (
+            <button
+              key={`dot-${slide.title}`}
+              onClick={() => api?.scrollTo(index)}
+              className={cn(
+                'h-2.5 transition-all duration-500 rounded-full',
+                index === current ? 'w-8 bg-primary' : 'w-2.5 bg-foreground/20 hover:bg-foreground/40',
+              )}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </Carousel>
     </section>

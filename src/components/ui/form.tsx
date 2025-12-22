@@ -8,25 +8,18 @@ import {
   Controller,
 
   FormProvider,
-  useFormContext,
-  useFormState,
 } from 'react-hook-form';
+
+import {
+  FormFieldContext,
+  FormItemContext,
+  useFormField,
+} from '@/components/ui/form-context';
 
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 
 const Form = FormProvider;
-
-type FormFieldContextValue<
-  TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
-> = {
-  name: TName;
-};
-
-const FormFieldContext = React.createContext<FormFieldContextValue>(
-  {} as FormFieldContextValue,
-);
 
 const FormField = <
   TFieldValues extends FieldValues = FieldValues,
@@ -40,37 +33,6 @@ const FormField = <
     </FormFieldContext>
   );
 };
-
-const useFormField = () => {
-  const fieldContext = React.use(FormFieldContext);
-  const itemContext = React.use(FormItemContext);
-  const { getFieldState } = useFormContext();
-  const formState = useFormState({ name: fieldContext.name });
-  const fieldState = getFieldState(fieldContext.name, formState);
-
-  if (!fieldContext) {
-    throw new Error('useFormField should be used within <FormField>');
-  }
-
-  const { id } = itemContext;
-
-  return {
-    id,
-    name: fieldContext.name,
-    formItemId: `${id}-form-item`,
-    formDescriptionId: `${id}-form-item-description`,
-    formMessageId: `${id}-form-item-message`,
-    ...fieldState,
-  };
-};
-
-type FormItemContextValue = {
-  id: string;
-};
-
-const FormItemContext = React.createContext<FormItemContextValue>(
-  {} as FormItemContextValue,
-);
 
 function FormItem({ className, ...props }: React.ComponentProps<'div'>) {
   const id = React.useId();
@@ -162,5 +124,4 @@ export {
   FormItem,
   FormLabel,
   FormMessage,
-  useFormField,
 };

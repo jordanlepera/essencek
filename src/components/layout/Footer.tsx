@@ -20,7 +20,7 @@ export const Footer = () => {
     <footer className="border-t border-border py-12 px-6 mt-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <Link href="/accueil" className="text-xl font-bold tracking-tight text-primary">
+          <Link href="/" className="text-xl font-bold tracking-tight text-primary">
             L'Essence K
           </Link>
           <p className="text-sm text-muted-foreground text-center md:text-left">
