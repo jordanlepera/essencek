@@ -1,60 +1,60 @@
 {
   "RootLayout": {
     "home_link": "Accueil",
-    "about_link": "A propos",
-    "portfolio_link": "Portfolio",
-    "sign_in_link": "Se connecter",
-    "sign_up_link": "S'inscrire"
+    "services_link": "Services",
+    "realisations_link": "Réalisations",
+    "history_link": "L'Histoire",
+    "contact_link": "Contact"
   },
   "BaseTemplate": {
-    "description": "Code de démarrage pour Next.js avec Tailwind CSS",
-    "made_with": "Fait avec <author></author>."
+    "description": "L'Essence K - Créateur de mobilier sur mesure",
+    "made_with": "Réalisé avec passion par <author>Jo Cappitta</author>."
   },
   "Index": {
-    "meta_title": "Présentation de Next.js Boilerplate",
-    "meta_description": "Next js Boilerplate est le code de démarrage parfait pour votre projet. Construisez votre application React avec le framework Next.js.",
-    "sponsors_title": "Partenaires"
+    "meta_title": "L'Essence K | Mobilier sur mesure & Création",
+    "meta_description": "Découvrez L'Essence K, artisan menuisier ébéniste créant des dressings, salles de bains et mobiliers uniques sur mesure.",
+    "hero_cta": "Découvrir nos services",
+    "services_title": "Nos Services",
+    "gallery_preview_title": "Nos Réalisations",
+    "contact_title": "Nous Contacter"
   },
-  "About": {
-    "meta_title": "A propos",
-    "meta_description": "A propos description",
-    "about_paragraph": "Bienvenue sur notre page À propos ! Nous sommes une équipe de passionnés et dévoués à la création de logiciels.",
-    "translation_powered_by": "Traduction propulsée par"
+  "Services": {
+    "dressing": {
+      "title": "Dressing",
+      "description": "Nos dressings se veulent ergonomiques et esthétique, véritable écrin pour vos vêtements et vos chaussures, ils sont pensés pour optimiser le moindre centimètre carré disponible. Droit ou en mansarde, nos dressings sont équipés de penderies, étagères réglables, tiroirs à sortie totale, rac à chaussures et luminaires."
+    },
+    "salledebain": {
+      "title": "Salle de bains",
+      "description": "L’espace « salle de bain » est une pièce maitresse de votre habitat, notre mobilier se veut design, robuste et fonctionnel. Tous nos meubles sont fabriqués sur mesures et avec des matériaux résistant à l’humidité, et des revêtements moderne."
+    },
+    "placard": {
+      "title": "Placards",
+      "description": "Nos placards sur mesures sont conçus pour vous apporter un maximum de rangements et en optimisant tout l’espace disponible, entre murs et du sol au plafond."
+    },
+    "mansarde": {
+      "title": "Les Mansardes",
+      "description": "Spécialiste de la mansarde, L’essence K met un point d’honneur à optimiser et occuper le moindre espace disponible pour vos sous pentes et sous escalier."
+    },
+    "mobilier": {
+      "title": "Mobilier Unique et Traditionnel",
+      "description": "L’essence K, c’est avant tout de la création, et dans notre atelier, tout est possible. En bois massif, en métal ou en composite, la seule limite fixée, sera celle de notre imagination."
+    },
+    "kustom": {
+      "title": "Kustom et Personnalisation",
+      "description": "La filière Kustom de l’atelier L’essence K, c’est le petit plus de notre activité. Fan de Kustom Culture et US, nous vous proposons également de la personnalisation de vestes, casques, et relooking auto/moto."
+    }
   },
-  "Portfolio": {
-    "meta_title": "Portfolio",
-    "meta_description": "Bienvenue sur la page de mon portfolio !",
-    "presentation": "Bienvenue sur ma page portfolio ! Vous trouverez ici une collection soigneusement organisée de mon travail et de mes réalisations. À travers ce portfolio, je mets en valeur mon expertise, ma créativité et la valeur que je peux apporter à vos projets.",
-    "portfolio_name": "Portfolio {name}",
-    "error_reporting_powered_by": "Rapport d'erreur propulsé par",
-    "coverage_powered_by": "Couverture de code propulsée par"
+  "History": {
+    "meta_title": "L'Histoire de L'Essence K",
+    "biography_title": "Jo Cappitta",
+    "biography_text": "Jo Cappitta, c’est le visage et les mains de l’atelier L’essence K. Ancien élève des compagnons du devoir du tour de France, sa forte expérience dans la création de mobilier et dans l’histoire du design et de l’art, vous permettront d’avoir un allié de taille dans l’aménagement de tous vos espaces. Menuisier, artiste, ébéniste et photographe, Jo Cappitta mettra tout son savoir et ses idées à votre service."
   },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {slug}",
-    "meta_description": "Description du Portfolio {slug}",
-    "header": "Portfolio {slug}",
-    "content": "Créé un ensemble de matériel promotionnel et d'éléments de marquage pour un événement d'entreprise. Conçu un thème visuellement unifié, englobant un logo, des affiches, des bannières et des actifs numériques. Intégrer l'identité de marque du client tout en l'insufflant à une approche contemporaine et innovante.",
-    "code_review_powered_by": "Code review propulsé par"
-  },
-  "SignIn": {
-    "meta_title": "Se connecter",
-    "meta_description": "Connectez-vous à votre compte avec facilité."
-  },
-  "SignUp": {
-    "meta_title": "S'inscrire",
-    "meta_description": "Créez un compte facilement grâce à notre processus d'inscription intuitif."
-  },
-  "Dashboard": {
-    "meta_title": "Tableau de bord",
-    "hello_message": "Bonjour {email}!",
-    "alternative_message": "Vous voulez créer votre SaaS plus rapidement en utilisant la même stack ? Essayez <url></url>."
-  },
-  "UserProfile": {
-    "meta_title": "Profil de l'utilisateur"
-  },
-  "DashboardLayout": {
-    "dashboard_link": "Tableau de bord",
-    "user_profile_link": "Gérer votre compte",
-    "sign_out": "Se déconnecter"
+  "Contact": {
+    "meta_title": "Contactez L'Essence K",
+    "form_email": "Votre Email",
+    "form_phone": "Votre Téléphone",
+    "form_message": "Votre Message",
+    "form_submit": "Envoyer",
+    "success_message": "Merci ! Votre message a bien été envoyé."
   }
 }

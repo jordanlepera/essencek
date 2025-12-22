@@ -1,60 +1,60 @@
 {
   "RootLayout": {
     "home_link": "Home",
-    "about_link": "About",
-    "portfolio_link": "Portfolio",
-    "sign_in_link": "Sign in",
-    "sign_up_link": "Sign up"
+    "services_link": "Services",
+    "realisations_link": "Realisations",
+    "history_link": "Story",
+    "contact_link": "Contact"
   },
   "BaseTemplate": {
-    "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
-    "made_with": "Made with <author></author>."
+    "description": "L'Essence K - Custom furniture creator",
+    "made_with": "Created with passion by <author>Jo Cappitta</author>."
   },
   "Index": {
-    "meta_title": "Next.js Boilerplate Presentation",
-    "meta_description": "Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework.",
-    "sponsors_title": "Sponsors"
+    "meta_title": "L'Essence K | Custom Furniture & Creation",
+    "meta_description": "Discover L'Essence K, artisan joiner and cabinetmaker creating custom walk-in closets, bathrooms and unique furniture.",
+    "hero_cta": "Discover our services",
+    "services_title": "Our Services",
+    "gallery_preview_title": "Our Realisations",
+    "contact_title": "Contact Us"
   },
-  "About": {
-    "meta_title": "About",
-    "meta_description": "About page description",
-    "about_paragraph": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
-    "translation_powered_by": "Translation powered by"
+  "Services": {
+    "dressing": {
+      "title": "Walk-in Closet",
+      "description": "Our walk-in closets are designed to be ergonomic and aesthetic, a true showcase for your clothes and shoes, they are thought out to optimize every available square centimeter. Straight or sloped, our closets are equipped with wardrobes, adjustable shelves, full-extension drawers, shoe racks and lighting."
+    },
+    "salledebain": {
+      "title": "Bathroom",
+      "description": "The \"bathroom\" space is a masterpiece of your home, our furniture is designed to be robust and functional. All our furniture is custom-made and with moisture-resistant materials and modern coatings."
+    },
+    "placard": {
+      "title": "Closets",
+      "description": "Our custom closets are designed to provide maximum storage while optimizing all available space, between walls and from floor to ceiling."
+    },
+    "mansarde": {
+      "title": "Sloped Spaces",
+      "description": "Specialist in sloped spaces, L'Essence K makes it a point of honor to optimize and occupy every available space for your slopes and under-stairs."
+    },
+    "mobilier": {
+      "title": "Unique & Traditional Furniture",
+      "description": "L'Essence K is above all about creation, and in our workshop, everything is possible. In solid wood, metal or composite, the only limit set will be that of our imagination."
+    },
+    "kustom": {
+      "title": "Kustom & Personalization",
+      "description": "The Kustom branch of the L'Essence K workshop is the little extra of our activity. Fan of Kustom Culture and US, we also offer customization of leather jackets and gloves, motorcycle helmets, decorative objects and finally auto and moto relooking."
+    }
   },
-  "Portfolio": {
-    "meta_title": "Portfolio",
-    "meta_description": "Welcome to my portfolio page!",
-    "presentation": "Welcome to my portfolio page! Here you will find a carefully curated collection of my work and accomplishments. Through this portfolio, I'm to showcase my expertise, creativity, and the value I can bring to your projects.",
-    "portfolio_name": "Portfolio {name}",
-    "error_reporting_powered_by": "Error reporting powered by",
-    "coverage_powered_by": "Code coverage powered by"
+  "History": {
+    "meta_title": "The Story of L'Essence K",
+    "biography_title": "Jo Cappitta",
+    "biography_text": "Jo Cappitta is the face and hands of the L'Essence K workshop. Former student of the Compagnons du Devoir du Tour de France, his strong experience in furniture creation and in the history of design and art will allow you to have a major ally in the layout of all your spaces. Carpenter, artist, cabinetmaker and photographer, Jo Cappitta will put all his knowledge and ideas at your service."
   },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {slug}",
-    "meta_description": "Portfolio {slug} description",
-    "header": "Portfolio {slug}",
-    "content": "Created a set of promotional materials and branding elements for a corporate event. Crafted a visually unified theme, encompassing a logo, posters, banners, and digital assets. Integrated the client's brand identity while infusing it with a contemporary and innovative approach.",
-    "code_review_powered_by": "Code review powered by"
-  },
-  "SignIn": {
-    "meta_title": "Sign in",
-    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
-  },
-  "SignUp": {
-    "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
-  },
-  "Dashboard": {
-    "meta_title": "Dashboard",
-    "hello_message": "Hello {email}!",
-    "alternative_message": "Want to build your SaaS faster using the same stack? Try <url></url>."
-  },
-  "UserProfile": {
-    "meta_title": "User Profile"
-  },
-  "DashboardLayout": {
-    "dashboard_link": "Dashboard",
-    "user_profile_link": "Manage your account",
-    "sign_out": "Sign out"
+  "Contact": {
+    "meta_title": "Contact L'Essence K",
+    "form_email": "Your Email",
+    "form_phone": "Your Phone",
+    "form_message": "Your Message",
+    "form_submit": "Send",
+    "success_message": "Thank you! Your message has been sent."
   }
 }

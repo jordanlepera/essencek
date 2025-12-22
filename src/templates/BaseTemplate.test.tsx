@@ -10,15 +10,7 @@ describe('Base template', () => {
     it('should have 3 menu items', () => {
       render(
         <NextIntlClientProvider locale="en" messages={messages}>
-          <BaseTemplate
-            leftNav={(
-              <>
-                <li>link 1</li>
-                <li>link 2</li>
-                <li>link 3</li>
-              </>
-            )}
-          >
+          <BaseTemplate>
             {null}
           </BaseTemplate>
         </NextIntlClientProvider>,
@@ -32,7 +24,7 @@ describe('Base template', () => {
     it('should have a link to support creativedesignsguru.com', () => {
       render(
         <NextIntlClientProvider locale="en" messages={messages}>
-          <BaseTemplate leftNav={<li>1</li>}>{null}</BaseTemplate>
+          <BaseTemplate>{null}</BaseTemplate>
         </NextIntlClientProvider>,
       );
 
