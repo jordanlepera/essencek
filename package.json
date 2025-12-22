@@ -11,7 +11,8 @@
     "build:next": "next build",
     "build": "concurrently --kill-others \"bun run build:next\"",
     "start": "next start",
-    "build-stats": "cross-env ANALYZE=true bun run build",
+    "serve:build-stats": "bun run next experimental-analyze",
+    "build-stats": "bun run next experimental-analyze --output",
     "clean": "rimraf .next out coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -25,7 +26,7 @@
     "storybook:test": "vitest run --config .storybook/vitest.config.mts",
     "build-storybook": "storybook build",
     "lighthouse": "unlighthouse-ci --site localhost:3000",
-    "test:lighthouse": "run-p start lighthouse --race",
+    "test:lighthouse": "concurrently --kill-others \"bun run start\" \"bun run lighthouse --race\"",
     "info": "next info"
   },
   "dependencies": {

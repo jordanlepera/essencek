@@ -37,7 +37,7 @@ jobs:
 
       - name: Run checks # run the checks passing in the ENVIRONMENT_URL and recording a test session.
         id: run-checks
-        run: npx dotenv -c production -- npx checkly test --reporter=github --record
+        run: bunx dotenv -c production -- bunx checkly test --reporter=github --record
         env:
           VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
           ENVIRONMENT_URL: ${{ github.event.deployment_status.environment_url }}
@@ -49,4 +49,4 @@ jobs:
       - name: Deploy checks # if the test run was successful and we are on Production, deploy the checks
         id: deploy-checks
         if: steps.run-checks.outcome == 'success' && github.event.deployment_status.environment == 'Production'
-        run: npx dotenv -c production -- npx checkly deploy --force
+        run: bunx dotenv -c production -- bunx checkly deploy --force

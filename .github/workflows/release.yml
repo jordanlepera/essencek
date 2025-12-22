@@ -33,9 +33,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures
+        run: bunx npm audit signatures
 
       - name: Release
-        run: npx semantic-release
+        run: bunx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
