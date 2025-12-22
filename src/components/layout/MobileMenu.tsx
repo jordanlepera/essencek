@@ -67,7 +67,7 @@ export const MobileMenu = ({ isOpen, onCloseAction, links }: MobileMenuProps) =>
       animate="open"
       exit="closed"
       variants={menuVariants}
-      className="fixed inset-0 z-60 bg-background flex flex-col items-center justify-center"
+      className="fixed inset-0 z-60 bg-background flex flex-col items-center justify-center h-dvh"
     >
       <Button
         variant="ghost"
