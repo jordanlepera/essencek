@@ -9,7 +9,7 @@ import { ServicesSection } from '@/components/home/ServicesSection';
 
 export default function AccueilPage(props: { params: Promise<{ locale: string }> }) {
   use(props.params);
-  const t = useTranslations('Index');
+  const tc = useTranslations('Contact');
 
   return (
     <div className="space-y-12">
@@ -25,9 +25,9 @@ export default function AccueilPage(props: { params: Promise<{ locale: string }>
 
         {/* Placeholder for Contact section */}
         <section className="py-24 text-center">
-          <h2 className="text-3xl font-bold mb-8">{t('contact_title')}</h2>
-          <p className="text-muted-foreground mb-8">
-            Vous avez un projet ? N'hésitez pas à nous contacter pour une étude personnalisée.
+          <h2 className="text-3xl font-bold mb-8">{tc('title')}</h2>
+          <p className="text-muted-foreground mb-8 text-xl">
+            {tc('description')}
           </p>
         </section>
       </motion.div>
