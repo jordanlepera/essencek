@@ -14,14 +14,7 @@ export default function MansardePage(props: { params: Promise<{ locale: string }
     <ServiceDetail
       title={t('title')}
       description={t('description')}
-      features={[
-        'Spécialiste de la sous-pente',
-        'Aménagement sous escalier',
-        'Optimisation du moindre espace',
-        'Beau et fonctionnel',
-        'Conception artisanale',
-        'Adaptabilité totale',
-      ]}
+      features={t.raw('features')}
     />
   );
 }

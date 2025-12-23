@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Link, usePathname } from '@/libs/I18nNavigation';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
 
 export const StickyNavbar = () => {
@@ -60,8 +61,11 @@ export const StickyNavbar = () => {
             ))}
           </nav>
 
-          {/* Mobile menu trigger */}
+          {/* Mobile menu trigger and Language Switcher for desktop */}
           <div className="flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-2">
+              <LanguageSwitcher />
+            </div>
             <Button
               variant="ghost"
               size="icon"

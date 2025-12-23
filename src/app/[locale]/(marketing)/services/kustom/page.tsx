@@ -14,14 +14,7 @@ export default function KustomPage(props: { params: Promise<{ locale: string }> 
     <ServiceDetail
       title={t('title')}
       description={t('description')}
-      features={[
-        'Kustom Culture & US',
-        'Vestes & Gants en cuir',
-        'Casques de motos',
-        'Objets de décoration',
-        'Relooking auto & moto',
-        'Style unique',
-      ]}
+      features={t.raw('features')}
     />
   );
 }

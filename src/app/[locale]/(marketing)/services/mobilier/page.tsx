@@ -14,14 +14,7 @@ export default function MobilierPage(props: { params: Promise<{ locale: string }
     <ServiceDetail
       title={t('title')}
       description={t('description')}
-      features={[
-        'Créations en bois massif',
-        'Métal & Composite',
-        'Pièces uniques',
-        'Fabrication traditionnelle',
-        'Design original',
-        'Finitions soignées',
-      ]}
+      features={t.raw('features')}
     />
   );
 }

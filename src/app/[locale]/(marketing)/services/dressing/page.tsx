@@ -14,14 +14,7 @@ export default function DressingPage(props: { params: Promise<{ locale: string }
     <ServiceDetail
       title={t('title')}
       description={t('description')}
-      features={[
-        'Sur mesure total',
-        'Matériaux de haute qualité',
-        'Penderies & Etagères réglables',
-        'Tiroirs à sortie totale',
-        'Racks à chaussures',
-        'Luminaires intégrés',
-      ]}
+      features={t.raw('features')}
     />
   );
 }

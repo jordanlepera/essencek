@@ -14,47 +14,201 @@
     "meta_title": "L'Essence K | Custom Furniture & Creation",
     "meta_description": "Discover L'Essence K, artisan joiner and cabinetmaker creating custom walk-in closets, bathrooms and unique furniture.",
     "hero_cta": "Discover our services",
+    "hero_slide1_title": "L'Essence K",
+    "hero_slide1_subtitle": "The art of custom furniture",
+    "hero_slide1_tagline": "Ergonomics, aesthetics and quality",
+    "hero_slide2_title": "Unique Creations",
+    "hero_slide2_subtitle": "Solid wood, metal and passion",
+    "hero_slide2_tagline": "From idea to realization",
+    "hero_slide3_title": "Layouts",
+    "hero_slide3_subtitle": "Optimize every square inch",
+    "hero_slide3_tagline": "Bathrooms, walk-in closets and sloped spaces",
+    "hero_slide4_title": "Kustom & Design",
+    "hero_slide4_subtitle": "Limitless Customization",
+    "hero_slide4_tagline": "Jackets, helmets, auto/moto and much more",
     "services_title": "Our Services",
     "gallery_preview_title": "Our Realisations",
-    "contact_title": "Contact Us"
+    "gallery_preview_description": "Discover a selection of our most beautiful realisations. Each piece is unique, designed to meet the most demanding expectations of our clients.",
+    "gallery_preview_cta": "View the gallery"
   },
   "Services": {
+    "page_title": "Our Services",
+    "page_description": "Discover the extent of our know-how, from traditional joinery to the most modern and personalized creations.",
+    "detail_back": "Back",
+    "detail_cta": "Request a personalized quote",
+    "detail_placeholder": "Visualisation",
     "dressing": {
       "title": "Walk-in Closet",
-      "description": "Our walk-in closets are designed to be ergonomic and aesthetic, a true showcase for your clothes and shoes, they are thought out to optimize every available square centimeter. Straight or sloped, our closets are equipped with wardrobes, adjustable shelves, full-extension drawers, shoe racks and lighting."
+      "description": "Our walk-in closets are designed to be ergonomic and aesthetic, a true showcase for your clothes and shoes, they are thought out to optimize every available square centimeter. Straight or sloped, our closets are equipped with wardrobes, adjustable shelves, full-extension drawers, shoe racks and lighting.",
+      "features": [
+        "Total custom-made",
+        "High quality materials",
+        "Adjustable wardrobes & shelves",
+        "Full-extension drawers",
+        "Shoe racks",
+        "Integrated lighting"
+      ]
     },
     "salledebain": {
       "title": "Bathroom",
-      "description": "The \"bathroom\" space is a masterpiece of your home, our furniture is designed to be robust and functional. All our furniture is custom-made and with moisture-resistant materials and modern coatings."
+      "description": "The \"bathroom\" space is a masterpiece of your home, our furniture is designed to be robust and functional. All our furniture is custom-made and with moisture-resistant materials and modern coatings.",
+      "features": [
+        "Robust and functional design",
+        "Moisture-resistant materials",
+        "Modern coatings",
+        "Personalized project study",
+        "Mirrors & Washbasins",
+        "Quality faucets"
+      ]
     },
     "placard": {
       "title": "Closets",
-      "description": "Our custom closets are designed to provide maximum storage while optimizing all available space, between walls and from floor to ceiling."
+      "description": "Our custom closets are designed to provide maximum storage while optimizing all available space, between walls and from floor to ceiling.",
+      "features": [
+        "Space optimization",
+        "From floor to ceiling",
+        "Between walls",
+        "Custom-made manufacturing",
+        "Ergonomic drawers and storage",
+        "Same materials as walk-in closets"
+      ]
     },
     "mansarde": {
       "title": "Sloped Spaces",
-      "description": "Specialist in sloped spaces, L'Essence K makes it a point of honor to optimize and occupy every available space for your slopes and under-stairs."
+      "description": "Specialist in sloped spaces, L'Essence K makes it a point of honor to optimize and occupy every available space for your slopes and under-stairs.",
+      "features": [
+        "Sloped space specialist",
+        "Under-stairs layout",
+        "Optimization of every space",
+        "Beautiful and functional",
+        "Artisanal design",
+        "Total adaptability"
+      ]
     },
     "mobilier": {
       "title": "Unique & Traditional Furniture",
-      "description": "L'Essence K is above all about creation, and in our workshop, everything is possible. In solid wood, metal or composite, the only limit set will be that of our imagination."
+      "description": "L'Essence K is above all about creation, and in our workshop, everything is possible. In solid wood, metal or composite, the only limit set will be that of our imagination.",
+      "features": [
+        "Solid wood creations",
+        "Metal & Composite",
+        "Unique pieces",
+        "Traditional manufacturing",
+        "Original design",
+        "Careful finishes"
+      ]
     },
     "kustom": {
       "title": "Kustom & Personalization",
-      "description": "The Kustom branch of the L'Essence K workshop is the little extra of our activity. Fan of Kustom Culture and US, we also offer customization of leather jackets and gloves, motorcycle helmets, decorative objects and finally auto and moto relooking."
+      "description": "The Kustom branch of the L'Essence K workshop is the little extra of our activity. Fan of Kustom Culture and US, we also offer customization of leather jackets and gloves, motorcycle helmets, decorative objects and finally auto and moto relooking.",
+      "features": [
+        "Kustom Culture & US",
+        "Leather jackets & gloves",
+        "Motorcycle helmets",
+        "Decorative objects",
+        "Auto & moto relooking",
+        "Unique style"
+      ]
     }
   },
   "History": {
     "meta_title": "The Story of L'Essence K",
     "biography_title": "Jo Cappitta",
-    "biography_text": "Jo Cappitta is the face and hands of the L'Essence K workshop. Former student of the Compagnons du Devoir du Tour de France, his strong experience in furniture creation and in the history of design and art will allow you to have a major ally in the layout of all your spaces. Carpenter, artist, cabinetmaker and photographer, Jo Cappitta will put all his knowledge and ideas at your service."
+    "biography_text": "Jo Cappitta is the face and hands of the L'Essence K workshop. Former student of the Compagnons du Devoir du Tour de France, his strong experience in furniture creation and in the history of design and art will allow you to have a major ally in the layout of all your spaces. Carpenter, artist, cabinetmaker and photographer, Jo Cappitta will put all his knowledge and ideas at your service.",
+    "quote": "The only limit set will be that of our imagination.",
+    "portrait_alt": "Portrait of Jo Cappitta",
+    "roles": {
+      "menuisier": {
+        "title": "Joiner",
+        "description": "Artisanal know-how and technical precision."
+      },
+      "artiste": {
+        "title": "Artist",
+        "description": "A creative vision for unique pieces."
+      },
+      "ebeniste": {
+        "title": "Cabinetmaker",
+        "description": "Mastery of wood species and finishes."
+      },
+      "photographe": {
+        "title": "Photographer",
+        "description": "An eye for detail and the highlighting of design."
+      }
+    }
+  },
+  "Realisations": {
+    "page_title": "Our Realisations",
+    "page_description": "A glimpse of our know-how through unique projects realized for our clients.",
+    "image_placeholder": "Image",
+    "items": {
+      "dressing_moderne": {
+        "title": "Modern Walk-in Closet",
+        "description": "Complete layout with integrated LED lighting and full-extension drawers.",
+        "category": "Walk-in Closet"
+      },
+      "salle_de_bain_zen": {
+        "title": "Zen Bathroom",
+        "description": "Suspended furniture in solid oak resistant to moisture.",
+        "category": "Bathroom"
+      },
+      "placard_sous_pente": {
+        "title": "Sloped Closet",
+        "description": "Maximum optimization of a sloped space for storage.",
+        "category": "Sloped Spaces"
+      },
+      "table_artisanale": {
+        "title": "Artisanal Table",
+        "description": "Mix of solid wood and metal for a unique piece.",
+        "category": "Furniture"
+      },
+      "dressing_angle": {
+        "title": "Angle Walk-in Closet",
+        "description": "Ergonomic solution to optimize every corner of the room.",
+        "category": "Walk-in Closet"
+      },
+      "meuble_lavabo": {
+        "title": "Washbasin Cabinet",
+        "description": "Purified design in waxed concrete and natural wood.",
+        "category": "Bathroom"
+      },
+      "bibliotheque": {
+        "title": "Custom Bookshelf",
+        "description": "Light and robust structure for a unique collection of books.",
+        "category": "Furniture"
+      },
+      "casque_kustom": {
+        "title": "Kustom Helmet",
+        "description": "Personalized painting and high quality lacquered finishes.",
+        "category": "Kustom"
+      }
+    }
   },
   "Contact": {
     "meta_title": "Contact L'Essence K",
+    "title": "Contact Us",
+    "description": "Each project is a story we write together. Ready to bring your boldest ideas to life?",
+    "phone_label": "Phone",
+    "email_label": "E-mail",
+    "atelier_label": "Workshop",
+    "atelier_value": "Near Alixan, Drôme",
+    "cta_title": "Ready to start your project?",
+    "cta_description": "We conduct a personalized study for each request. Let's talk about your desires, your needs and your budget to design the furniture that suits you.",
+    "cta_submit": "Make a request",
+    "cta_view_work": "See our work",
+    "response_time": "Response within 48h on average",
     "form_email": "Your Email",
+    "form_email_placeholder": "your@email.com",
     "form_phone": "Your Phone",
+    "form_phone_placeholder": "06 00 00 00 00",
     "form_message": "Your Message",
+    "form_message_placeholder": "Tell us more about your project...",
     "form_submit": "Send",
-    "success_message": "Thank you! Your message has been sent."
+    "success_message": "Thank you! Your message has been sent.",
+    "success_subtitle": "We will get back to you as soon as possible.",
+    "send_another": "Send another message",
+    "validation": {
+      "email": "The email address must be valid.",
+      "phone": "The phone number must contain at least 10 digits.",
+      "message": "The message must contain at least 10 characters."
+    }
   }
 }

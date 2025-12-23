@@ -33,7 +33,9 @@ export default function HistoirePage(props: { params: Promise<{ locale: string }
               {t('biography_text')}
             </p>
             <p className="text-lg text-muted-foreground/80 leading-relaxed italic">
-              "La seule limite fixée, sera celle de notre imagination."
+              "
+              {t('quote')}
+              "
             </p>
           </motion.div>
 
@@ -44,20 +46,20 @@ export default function HistoirePage(props: { params: Promise<{ locale: string }
             className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8"
           >
             <div className="p-8 rounded-3xl bg-accent/10 border border-primary/5 space-y-3">
-              <h3 className="text-xl font-bold">Menuisier</h3>
-              <p className="text-sm text-muted-foreground">Savoir-faire artisanal et précision technique.</p>
+              <h3 className="text-xl font-bold">{t('roles.menuisier.title')}</h3>
+              <p className="text-sm text-muted-foreground">{t('roles.menuisier.description')}</p>
             </div>
             <div className="p-8 rounded-3xl bg-accent/10 border border-primary/5 space-y-3">
-              <h3 className="text-xl font-bold">Artiste</h3>
-              <p className="text-sm text-muted-foreground">Une vision créative pour des pièces uniques.</p>
+              <h3 className="text-xl font-bold">{t('roles.artiste.title')}</h3>
+              <p className="text-sm text-muted-foreground">{t('roles.artiste.description')}</p>
             </div>
             <div className="p-8 rounded-3xl bg-accent/10 border border-primary/5 space-y-3">
-              <h3 className="text-xl font-bold">Ebéniste</h3>
-              <p className="text-sm text-muted-foreground">Maîtrise des essences de bois et des finitions.</p>
+              <h3 className="text-xl font-bold">{t('roles.ebeniste.title')}</h3>
+              <p className="text-sm text-muted-foreground">{t('roles.ebeniste.description')}</p>
             </div>
             <div className="p-8 rounded-3xl bg-accent/10 border border-primary/5 space-y-3">
-              <h3 className="text-xl font-bold">Photographe</h3>
-              <p className="text-sm text-muted-foreground">L'œil pour le détail et la mise en valeur du design.</p>
+              <h3 className="text-xl font-bold">{t('roles.photographe.title')}</h3>
+              <p className="text-sm text-muted-foreground">{t('roles.photographe.description')}</p>
             </div>
           </motion.div>
         </div>
@@ -70,8 +72,8 @@ export default function HistoirePage(props: { params: Promise<{ locale: string }
         >
           {/* Placeholder for Jo Cappitta's photo */}
           <div className="absolute inset-0 bg-linear-to-tr from-primary/10 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-center text-primary/20 font-bold text-lg italic">
-            Portrait de Jo Cappitta
+          <div className="absolute inset-0 flex items-center justify-center text-primary/20 font-bold text-lg italic text-center px-4">
+            {t('portrait_alt')}
           </div>
         </motion.div>
       </div>

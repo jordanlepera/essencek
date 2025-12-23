@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { CheckCircle2, ChevronLeft } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/libs/I18nNavigation';
 
@@ -13,6 +14,8 @@ type ServiceDetailProps = {
 };
 
 export const ServiceDetail = ({ title, description, features }: ServiceDetailProps) => {
+  const t = useTranslations('Services');
+
   return (
     <div className="py-12 space-y-16">
       <motion.div
@@ -24,7 +27,7 @@ export const ServiceDetail = ({ title, description, features }: ServiceDetailPro
           <Button variant="ghost" size="sm" className="flex gap-1 items-center">
             <ChevronLeft className="h-4 w-4" />
             {' '}
-            Retour
+            {t('detail_back')}
           </Button>
         </Link>
       </motion.div>
@@ -67,7 +70,7 @@ export const ServiceDetail = ({ title, description, features }: ServiceDetailPro
           >
             <Link href="/contact">
               <Button size="lg" className="rounded-full px-8">
-                Demander un devis personnalisé
+                {t('detail_cta')}
               </Button>
             </Link>
           </motion.div>
@@ -81,8 +84,8 @@ export const ServiceDetail = ({ title, description, features }: ServiceDetailPro
         >
           {/* Background decoration */}
           <div className="absolute inset-0 bg-linear-to-tr from-primary/5 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-center text-primary/20 font-bold text-lg italic">
-            Visualisation
+          <div className="absolute inset-0 flex items-center justify-center text-primary/20 font-bold text-lg italic text-center px-4">
+            {t('detail_placeholder')}
             {' '}
             {title}
           </div>

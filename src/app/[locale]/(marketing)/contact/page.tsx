@@ -26,10 +26,9 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
       <div className="flex flex-col lg:flex-row gap-16">
         <div className="flex-1 space-y-12">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Parlons de votre projet</h2>
+            <h2 className="text-3xl font-bold">{t('cta_title')}</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Que ce soit pour un dressing, une salle de bain ou une pièce de mobilier unique,
-              nous sommes à votre écoute pour transformer vos idées en réalité.
+              {t('cta_description')}
             </p>
           </div>
 
@@ -39,7 +38,7 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
                 <Mail className="h-6 w-6" />
               </div>
               <div className="space-y-1">
-                <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">E-mail</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">{t('email_label')}</p>
                 <p className="text-xl font-bold">contact@lessencek.fr</p>
               </div>
             </div>
@@ -49,7 +48,7 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
                 <Phone className="h-6 w-6" />
               </div>
               <div className="space-y-1">
-                <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Téléphone</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">{t('phone_label')}</p>
                 <p className="text-xl font-bold">06 00 00 00 00</p>
               </div>
             </div>
@@ -59,8 +58,8 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
                 <MapPin className="h-6 w-6" />
               </div>
               <div className="space-y-1">
-                <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Localisation</p>
-                <p className="text-xl font-bold">Atelier L'Essence K, France</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">{t('atelier_label')}</p>
+                <p className="text-xl font-bold">{t('atelier_value')}</p>
               </div>
             </div>
           </div>
