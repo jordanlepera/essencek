@@ -14,14 +14,7 @@ export default function PlacardPage(props: { params: Promise<{ locale: string }>
     <ServiceDetail
       title={t('title')}
       description={t('description')}
-      features={[
-        'Optimisation de l\'espace',
-        'Du sol au plafond',
-        'Entre murs',
-        'Fabrication sur mesure',
-        'Tiroirs et rangements ergonomiques',
-        'Matériaux identiques aux dressings',
-      ]}
+      features={t.raw('features')}
     />
   );
 }

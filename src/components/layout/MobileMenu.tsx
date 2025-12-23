@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Link, usePathname } from '@/libs/I18nNavigation';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -34,15 +35,15 @@ export const MobileMenu = ({ isOpen, onCloseAction, links }: MobileMenuProps) =>
       y: '-100%',
       transition: {
         duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.32, 0, 0.67, 0], // Accelerated ease-in for exit
       },
     },
     open: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1], // Smooth ease-out for entrance
       },
     },
   };
@@ -69,6 +70,10 @@ export const MobileMenu = ({ isOpen, onCloseAction, links }: MobileMenuProps) =>
       variants={menuVariants}
       className="fixed inset-0 z-60 bg-background flex flex-col items-center justify-center h-dvh"
     >
+      <div className="absolute top-6 left-6">
+        <LanguageSwitcher />
+      </div>
+
       <Button
         variant="ghost"
         size="icon"

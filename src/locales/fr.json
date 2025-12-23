@@ -14,47 +14,201 @@
     "meta_title": "L'Essence K | Mobilier sur mesure & Création",
     "meta_description": "Découvrez L'Essence K, artisan menuisier ébéniste créant des dressings, salles de bains et mobiliers uniques sur mesure.",
     "hero_cta": "Découvrir nos services",
+    "hero_slide1_title": "L'Essence K",
+    "hero_slide1_subtitle": "L'art du mobilier sur mesure",
+    "hero_slide1_tagline": "Ergonomie, esthétique et qualité",
+    "hero_slide2_title": "Créations Uniques",
+    "hero_slide2_subtitle": "Bois massif, métal et passion",
+    "hero_slide2_tagline": "De l'idée à la réalisation",
+    "hero_slide3_title": "Aménagements",
+    "hero_slide3_subtitle": "Optimisez chaque centimètre carré",
+    "hero_slide3_tagline": "Salles de bains, dressings et mansardes",
+    "hero_slide4_title": "Kustom & Design",
+    "hero_slide4_subtitle": "Personnalisation sans limites",
+    "hero_slide4_tagline": "Vestes, casques, auto/moto et plus encore",
     "services_title": "Nos Services",
     "gallery_preview_title": "Nos Réalisations",
-    "contact_title": "Nous Contacter"
+    "gallery_preview_description": "Découvrez une sélection de nos plus belles réalisations. Chaque pièce est unique, conçue pour répondre aux attentes les plus exigeantes de nos clients.",
+    "gallery_preview_cta": "Voir la galerie"
   },
   "Services": {
+    "page_title": "Nos Services",
+    "page_description": "Découvrez l'étendue de notre savoir-faire, de la menuiserie traditionnelle aux créations les plus modernes et personnalisées.",
+    "detail_back": "Retour",
+    "detail_cta": "Demander un devis personnalisé",
+    "detail_placeholder": "Visualisation",
     "dressing": {
       "title": "Dressing",
-      "description": "Nos dressings se veulent ergonomiques et esthétique, véritable écrin pour vos vêtements et vos chaussures, ils sont pensés pour optimiser le moindre centimètre carré disponible. Droit ou en mansarde, nos dressings sont équipés de penderies, étagères réglables, tiroirs à sortie totale, rac à chaussures et luminaires."
+      "description": "Nos dressings se veulent ergonomiques et esthétique, véritable écrin pour vos vêtements et vos chaussures, ils sont pensés pour optimiser le moindre centimètre carré disponible. Droit ou en mansarde, nos dressings sont équipés de penderies, étagères réglables, tiroirs à sortie totale, rac à chaussures et luminaires.",
+      "features": [
+        "Sur mesure total",
+        "Matériaux de haute qualité",
+        "Penderies & Etagères réglables",
+        "Tiroirs à sortie totale",
+        "Racks à chaussures",
+        "Luminaires intégrés"
+      ]
     },
     "salledebain": {
       "title": "Salle de bains",
-      "description": "L’espace « salle de bain » est une pièce maitresse de votre habitat, notre mobilier se veut design, robuste et fonctionnel. Tous nos meubles sont fabriqués sur mesures et avec des matériaux résistant à l’humidité, et des revêtements moderne."
+      "description": "L’espace « salle de bain » est une pièce maitresse de votre habitat, notre mobilier se veut design, robuste et fonctionnel. Tous nos meubles sont fabriqués sur mesures et avec des matériaux résistant à l’humidité, et des revêtements moderne.",
+      "features": [
+        "Design robuste et fonctionnel",
+        "Matériaux résistants à l'humidité",
+        "Revêtements modernes",
+        "Étude de projet personnalisée",
+        "Miroirs & Vasques",
+        "Robinetterie de qualité"
+      ]
     },
     "placard": {
       "title": "Placards",
-      "description": "Nos placards sur mesures sont conçus pour vous apporter un maximum de rangements et en optimisant tout l’espace disponible, entre murs et du sol au plafond."
+      "description": "Nos placards sur mesures sont conçus pour vous apporter un maximum de rangements et en optimisant tout l’espace disponible, entre murs et du sol au plafond.",
+      "features": [
+        "Optimisation de l'espace",
+        "Du sol au plafond",
+        "Entre murs",
+        "Fabrication sur mesure",
+        "Tiroirs et rangements ergonomiques",
+        "Matériaux identiques aux dressings"
+      ]
     },
     "mansarde": {
       "title": "Les Mansardes",
-      "description": "Spécialiste de la mansarde, L’essence K met un point d’honneur à optimiser et occuper le moindre espace disponible pour vos sous pentes et sous escalier."
+      "description": "Spécialiste de la mansarde, L’essence K met un point d’honneur à optimiser et occuper le moindre espace disponible pour vos sous pentes et sous escalier.",
+      "features": [
+        "Spécialiste de la sous-pente",
+        "Aménagement sous escalier",
+        "Optimisation du moindre espace",
+        "Beau et fonctionnel",
+        "Conception artisanale",
+        "Adaptabilité totale"
+      ]
     },
     "mobilier": {
       "title": "Mobilier Unique et Traditionnel",
-      "description": "L’essence K, c’est avant tout de la création, et dans notre atelier, tout est possible. En bois massif, en métal ou en composite, la seule limite fixée, sera celle de notre imagination."
+      "description": "L’essence K, c’est avant tout de la création, et dans notre atelier, tout est possible. En bois massif, en métal ou en composite, la seule limite fixée, sera celle de notre imagination.",
+      "features": [
+        "Créations en bois massif",
+        "Métal & Composite",
+        "Pièces uniques",
+        "Fabrication traditionnelle",
+        "Design original",
+        "Finitions soignées"
+      ]
     },
     "kustom": {
       "title": "Kustom et Personnalisation",
-      "description": "La filière Kustom de l’atelier L’essence K, c’est le petit plus de notre activité. Fan de Kustom Culture et US, nous vous proposons également de la personnalisation de vestes, casques, et relooking auto/moto."
+      "description": "La filière Kustom de l’atelier L’essence K, c’est le petit plus de notre activité. Fan de Kustom Culture et US, nous vous proposons également de la personnalisation de vestes, casques, et relooking auto/moto.",
+      "features": [
+        "Kustom Culture & US",
+        "Vestes & Gants en cuir",
+        "Casques de motos",
+        "Objets de décoration",
+        "Relooking auto & moto",
+        "Style unique"
+      ]
     }
   },
   "History": {
     "meta_title": "L'Histoire de L'Essence K",
     "biography_title": "Jo Cappitta",
-    "biography_text": "Jo Cappitta, c’est le visage et les mains de l’atelier L’essence K. Ancien élève des compagnons du devoir du tour de France, sa forte expérience dans la création de mobilier et dans l’histoire du design et de l’art, vous permettront d’avoir un allié de taille dans l’aménagement de tous vos espaces. Menuisier, artiste, ébéniste et photographe, Jo Cappitta mettra tout son savoir et ses idées à votre service."
+    "biography_text": "Jo Cappitta, c’est le visage et les mains de l’atelier L’essence K. Ancien élève des compagnons du devoir du tour de France, sa forte expérience dans la création de mobilier et dans l’histoire du design et de l’art, vous permettront d’avoir un allié de taille dans l’aménagement de tous vos espaces. Menuisier, artiste, ébéniste et photographe, Jo Cappitta mettra tout son savoir et ses idées à votre service.",
+    "quote": "La seule limite fixée, sera celle de notre imagination.",
+    "portrait_alt": "Portrait de Jo Cappitta",
+    "roles": {
+      "menuisier": {
+        "title": "Menuisier",
+        "description": "Savoir-faire artisanal et précision technique."
+      },
+      "artiste": {
+        "title": "Artiste",
+        "description": "Une vision créative pour des pièces uniques."
+      },
+      "ebeniste": {
+        "title": "Ebéniste",
+        "description": "Maîtrise des essences de bois et des finitions."
+      },
+      "photographe": {
+        "title": "Photographe",
+        "description": "L'œil pour le détail et la mise en valeur du design."
+      }
+    }
+  },
+  "Realisations": {
+    "page_title": "Nos Réalisations",
+    "page_description": "Un aperçu de notre savoir-faire à travers des projets uniques réalisés pour nos clients.",
+    "image_placeholder": "Image",
+    "items": {
+      "dressing_moderne": {
+        "title": "Dressing Moderne",
+        "description": "Aménagement complet avec éclairage LED intégré et tiroirs à sortie totale.",
+        "category": "Dressing"
+      },
+      "salle_de_bain_zen": {
+        "title": "Salle de Bain Zen",
+        "description": "Mobilier suspendu en chêne massif résistant à l'humidité.",
+        "category": "Salle de Bain"
+      },
+      "placard_sous_pente": {
+        "title": "Placard sous Pente",
+        "description": "Optimisation maximale d'un espace mansardé pour du rangement.",
+        "category": "Mansarde"
+      },
+      "table_artisanale": {
+        "title": "Table Artisanale",
+        "description": "Mélange de bois massif et de métal pour une pièce unique.",
+        "category": "Mobilier"
+      },
+      "dressing_angle": {
+        "title": "Dressing d'Angle",
+        "description": "Solution ergonomique pour optimiser chaque coin de la pièce.",
+        "category": "Dressing"
+      },
+      "meuble_lavabo": {
+        "title": "Meuble de Lavabo",
+        "description": "Design épuré en béton ciré et bois naturel.",
+        "category": "Salle de Bain"
+      },
+      "bibliotheque": {
+        "title": "Bibliothèque sur Mesure",
+        "description": "Structure légère et robuste pour une collection de livres unique.",
+        "category": "Mobilier"
+      },
+      "casque_kustom": {
+        "title": "Casque Kustom",
+        "description": "Peinture personnalisée et finitions laquées haute qualité.",
+        "category": "Kustom"
+      }
+    }
   },
   "Contact": {
     "meta_title": "Contactez L'Essence K",
+    "title": "Nous Contacter",
+    "description": "Chaque projet est une histoire que nous écrivons ensemble. Prêt à donner vie à vos idées les plus audacieuses ?",
+    "phone_label": "Téléphone",
+    "email_label": "E-mail",
+    "atelier_label": "Atelier",
+    "atelier_value": "Environs d'Alixan, Drôme",
+    "cta_title": "Prêt à commencer votre projet ?",
+    "cta_description": "Nous réalisons une étude personnalisée pour chaque demande. Parlons de vos envies, de vos besoins et de votre budget pour concevoir le mobilier qui vous ressemble.",
+    "cta_submit": "Faire une demande",
+    "cta_view_work": "Voir nos travaux",
+    "response_time": "Réponse sous 48h en moyenne",
     "form_email": "Votre Email",
+    "form_email_placeholder": "votre@email.com",
     "form_phone": "Votre Téléphone",
+    "form_phone_placeholder": "06 00 00 00 00",
     "form_message": "Votre Message",
+    "form_message_placeholder": "Dites-nous en plus sur votre projet...",
     "form_submit": "Envoyer",
-    "success_message": "Merci ! Votre message a bien été envoyé."
+    "success_message": "Merci ! Votre message a bien été envoyé.",
+    "success_subtitle": "Nous vous recontacterons dans les plus brefs délais.",
+    "send_another": "Envoyer un autre message",
+    "validation": {
+      "email": "L'adresse email doit être valide.",
+      "phone": "Le numéro de téléphone doit contenir au moins 10 chiffres.",
+      "message": "Le message doit contenir au moins 10 caractères."
+    }
   }
 }
