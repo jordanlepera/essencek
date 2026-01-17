@@ -179,6 +179,46 @@
         "title": "Casque Kustom",
         "description": "Peinture personnalisée et finitions laquées haute qualité.",
         "category": "Kustom"
+      },
+      "meuble_tv_industriel": {
+        "title": "Meuble TV Industriel",
+        "category": "Meuble",
+        "description": "Meuble TV alliant bois brut et métal noir pour un style loft authentique."
+      },
+      "dressing_blanc_laque": {
+        "title": "Dressing Blanc Laqué",
+        "category": "Dressing",
+        "description": "Grand dressing lumineux avec finitions laquées blanches et LED intégrées."
+      },
+      "meuble_sdb_teck": {
+        "title": "Meuble SDB Teck",
+        "category": "Salle de Bain",
+        "description": "Meuble sous vasque en teck massif imputrescible. Design suspendu."
+      },
+      "table_basse_racine": {
+        "title": "Table Basse Racine",
+        "category": "Meuble",
+        "description": "Table basse sculpturale réalisée à partir d'une racine de teck polie."
+      },
+      "dressing_chene_clair": {
+        "title": "Dressing Chêne Clair",
+        "category": "Dressing",
+        "description": "Aménagement complet de dressing en chêne clair avec tiroirs à l'anglaise."
+      },
+      "bureau_minimale": {
+        "title": "Bureau Minimaliste",
+        "category": "Meuble",
+        "description": "Bureau épuré en frêne massif. Lignes fines et passages de câbles."
+      },
+      "commode_vintage": {
+        "title": "Commode Vintage",
+        "category": "Meuble",
+        "description": "Réinterprétation moderne d'une commode classique avec pieds compas."
+      },
+      "double_vasque_pierre": {
+        "title": "Double Vasque Pierre",
+        "category": "Salle de Bain",
+        "description": "Plan vasque minéral avec double robinetterie encastrée. Espace et sérénité."
       }
     }
   },
@@ -187,9 +227,13 @@
     "title": "Nous Contacter",
     "description": "Chaque projet est une histoire que nous écrivons ensemble. Prêt à donner vie à vos idées les plus audacieuses ?",
     "phone_label": "Téléphone",
+    "phone_reveal": "Cliquer pour afficher",
+    "phone_copied": "Copié !",
     "email_label": "E-mail",
+    "email_reveal": "Cliquer pour afficher",
+    "email_copied": "Copié !",
     "atelier_label": "Atelier",
-    "atelier_value": "Environs d'Alixan, Drôme",
+    "atelier_value": "Environs de Mulhouse, Haut-Rhin",
     "cta_title": "Prêt à commencer votre projet ?",
     "cta_description": "Nous réalisons une étude personnalisée pour chaque demande. Parlons de vos envies, de vos besoins et de votre budget pour concevoir le mobilier qui vous ressemble.",
     "cta_submit": "Faire une demande",

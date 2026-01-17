@@ -15,6 +15,7 @@ export default function SalleDeBainPage(props: { params: Promise<{ locale: strin
       title={t('title')}
       description={t('description')}
       features={t.raw('features')}
+      image="/assets/images/salledebain/salledebain1.avif"
     />
   );
 }

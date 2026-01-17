@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/libs/I18nNavigation';
 
@@ -40,11 +41,43 @@ export const GalleryHighlight = () => {
         </div>
 
         <div className="flex-1 grid grid-cols-2 gap-3 sm:gap-4 w-full">
-          {/* Placeholder grid for gallery preview */}
-          <div className="aspect-square bg-primary/20 rounded-2xl" />
-          <div className="aspect-square bg-primary/10 rounded-2xl mt-4 sm:mt-8" />
-          <div className="aspect-square bg-primary/30 rounded-2xl -mt-4 sm:-mt-8" />
-          <div className="aspect-square bg-primary/15 rounded-2xl" />
+          {/* Real Gallery Preview with actual assets */}
+          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-500">
+            <Image
+              src="/assets/images/meuble/meuble5.avif"
+              alt="Custom Furniture"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+            />
+          </div>
+          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mt-4 sm:mt-8 transform hover:scale-[1.02] transition-transform duration-500">
+            <Image
+              src="/assets/images/dressing/dressing2.avif"
+              alt="Custom Dressing"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+            />
+          </div>
+          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg -mt-4 sm:-mt-8 transform hover:scale-[1.02] transition-transform duration-500">
+            <Image
+              src="/assets/images/meuble/meuble12.avif"
+              alt="Interior Layout"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+            />
+          </div>
+          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-500">
+            <Image
+              src="/assets/images/kustom/kustom2.avif"
+              alt="Kustom Design"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+            />
+          </div>
         </div>
       </div>
     </section>

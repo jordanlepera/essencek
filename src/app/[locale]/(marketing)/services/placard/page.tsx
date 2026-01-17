@@ -15,6 +15,7 @@ export default function PlacardPage(props: { params: Promise<{ locale: string }>
       title={t('title')}
       description={t('description')}
       features={t.raw('features')}
+      image="/assets/images/meuble/meuble1.avif"
     />
   );
 }

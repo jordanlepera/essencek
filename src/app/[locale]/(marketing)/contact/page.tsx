@@ -6,6 +6,8 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { use } from 'react';
 
+import { SecureEmail } from '@/components/common/SecureEmail';
+import { SecurePhone } from '@/components/common/SecurePhone';
 import { ContactForm } from '@/components/contact/ContactForm';
 
 export default function ContactPage(props: { params: Promise<{ locale: string }> }) {
@@ -39,7 +41,7 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
               </div>
               <div className="space-y-1">
                 <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">{t('email_label')}</p>
-                <p className="text-xl font-bold">contact@lessencek.fr</p>
+                <SecureEmail email="contact@lessencek.com" />
               </div>
             </div>
 
@@ -49,7 +51,7 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
               </div>
               <div className="space-y-1">
                 <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">{t('phone_label')}</p>
-                <p className="text-xl font-bold">06 00 00 00 00</p>
+                <SecurePhone number="06 12 69 20 76" />
               </div>
             </div>
 

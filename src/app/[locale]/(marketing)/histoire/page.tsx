@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 import { use } from 'react';
 
@@ -68,13 +69,19 @@ export default function HistoirePage(props: { params: Promise<{ locale: string }
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="flex-1 w-full aspect-3/4 rounded-[2.5rem] bg-accent/10 border border-primary/5 overflow-hidden relative"
+          className="flex-1 w-full aspect-3/4 rounded-[2.5rem] bg-accent/10 border border-primary/5 overflow-hidden relative shadow-2xl group"
         >
-          {/* Placeholder for Jo Cappitta's photo */}
-          <div className="absolute inset-0 bg-linear-to-tr from-primary/10 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-center text-primary/20 font-bold text-lg italic text-center px-4">
-            {t('portrait_alt')}
-          </div>
+          <Image
+            src="/assets/images/portrait/portrait1.avif"
+            alt={t('portrait_alt')}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            quality={90}
+            priority
+          />
+          {/* Subtle overlay */}
+          <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-40 hover:opacity-10 transition-opacity" />
         </motion.div>
       </div>
     </div>

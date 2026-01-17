@@ -179,6 +179,46 @@
         "title": "Kustom Helmet",
         "description": "Personalized painting and high quality lacquered finishes.",
         "category": "Kustom"
+      },
+      "meuble_tv_industriel": {
+        "title": "Industrial TV Unit",
+        "category": "Furniture",
+        "description": "TV unit combining raw wood and black metal for an authentic loft style."
+      },
+      "dressing_blanc_laque": {
+        "title": "White Lacquer Wardrobe",
+        "category": "Walk-in Closet",
+        "description": "Large luminous walk-in closet with white lacquer finishes and integrated LEDs."
+      },
+      "meuble_sdb_teck": {
+        "title": "Teak Vanity Unit",
+        "category": "Bathroom",
+        "description": "Solid rot-proof teak vanity unit. Suspended design."
+      },
+      "table_basse_racine": {
+        "title": "Root Coffee Table",
+        "category": "Furniture",
+        "description": "Sculptural coffee table made from a polished teak root."
+      },
+      "dressing_chene_clair": {
+        "title": "Light Oak Wardrobe",
+        "category": "Walk-in Closet",
+        "description": "Complete walk-in closet arrangement in light oak with English drawers."
+      },
+      "bureau_minimale": {
+        "title": "Minimalist Desk",
+        "category": "Furniture",
+        "description": "Sleek solid ash desk. Fine lines and cable management."
+      },
+      "commode_vintage": {
+        "title": "Vintage Dresser",
+        "category": "Furniture",
+        "description": "Modern reinterpretation of a classic dresser with compass legs."
+      },
+      "double_vasque_pierre": {
+        "title": "Stone Double Vanity",
+        "category": "Bathroom",
+        "description": "Mineral vanity top with recessed double faucets. Space and serenity."
       }
     }
   },
@@ -187,9 +227,13 @@
     "title": "Contact Us",
     "description": "Each project is a story we write together. Ready to bring your boldest ideas to life?",
     "phone_label": "Phone",
+    "phone_reveal": "Click to reveal",
+    "phone_copied": "Copied!",
     "email_label": "E-mail",
+    "email_reveal": "Click to reveal",
+    "email_copied": "Copied!",
     "atelier_label": "Workshop",
-    "atelier_value": "Near Alixan, Drôme",
+    "atelier_value": "Near Mulhouse, Haut-Rhin",
     "cta_title": "Ready to start your project?",
     "cta_description": "We conduct a personalized study for each request. Let's talk about your desires, your needs and your budget to design the furniture that suits you.",
     "cta_submit": "Make a request",

@@ -8,6 +8,10 @@ import './src/libs/Env';
 const baseConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  images: {
+    qualities: [75, 100],
+  },
+  allowedDevOrigins: ['192.168.0.37', 'localhost', '127.0.0.1'],
 };
 
 // Initialize the Next-Intl plugin

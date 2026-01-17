@@ -3,7 +3,8 @@ import { z } from 'zod';
 
 export const Env = createEnv({
   server: {
-    ARCJET_KEY: z.string().startsWith('ajkey_').optional(),
+    ARCJET_KEY: z.string().startsWith('ajkey_'),
+    RESEND_API_KEY: z.string().startsWith('re_'),
     BETTER_STACK_SOURCE_TOKEN: z.string().optional(),
   },
   client: {
@@ -17,6 +18,7 @@ export const Env = createEnv({
   // You need to destructure all the keys manually
   runtimeEnv: {
     ARCJET_KEY: process.env.ARCJET_KEY,
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
     BETTER_STACK_SOURCE_TOKEN: process.env.BETTER_STACK_SOURCE_TOKEN,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
     NODE_ENV: process.env.NODE_ENV,

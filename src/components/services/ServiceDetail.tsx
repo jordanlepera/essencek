@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2, ChevronLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/libs/I18nNavigation';
 
@@ -10,10 +11,10 @@ type ServiceDetailProps = {
   title: string;
   description: string;
   features?: string[];
-  imagePlaceholder?: string;
+  image: string;
 };
 
-export const ServiceDetail = ({ title, description, features }: ServiceDetailProps) => {
+export const ServiceDetail = ({ title, description, features, image }: ServiceDetailProps) => {
   const t = useTranslations('Services');
 
   return (
@@ -80,15 +81,19 @@ export const ServiceDetail = ({ title, description, features }: ServiceDetailPro
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex-1 w-full aspect-4/5 rounded-[2.5rem] bg-accent/10 border border-primary/5 shadow-2xl overflow-hidden relative"
+          className="flex-1 w-full aspect-4/5 rounded-[2.5rem] bg-accent/10 border border-primary/5 shadow-2xl overflow-hidden relative group"
         >
-          {/* Background decoration */}
-          <div className="absolute inset-0 bg-linear-to-tr from-primary/5 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-center text-primary/20 font-bold text-lg italic text-center px-4">
-            {t('detail_placeholder')}
-            {' '}
-            {title}
-          </div>
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            quality={90}
+            priority
+          />
+          {/* Subtle overlay for depth */}
+          <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-60" />
         </motion.div>
       </div>
     </div>
