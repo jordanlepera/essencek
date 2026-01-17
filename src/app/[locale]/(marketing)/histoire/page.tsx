@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-
 import { use } from 'react';
+
+import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 export default function HistoirePage(props: { params: Promise<{ locale: string }> }) {
   use(props.params);
@@ -71,7 +71,7 @@ export default function HistoirePage(props: { params: Promise<{ locale: string }
           viewport={{ once: true }}
           className="flex-1 w-full aspect-3/4 rounded-[2.5rem] bg-accent/10 border border-primary/5 overflow-hidden relative shadow-2xl group"
         >
-          <Image
+          <OptimizedImage
             src="/assets/images/portrait/portrait1.avif"
             alt={t('portrait_alt')}
             fill
@@ -79,6 +79,7 @@ export default function HistoirePage(props: { params: Promise<{ locale: string }
             sizes="(max-width: 1024px) 100vw, 50vw"
             quality={90}
             priority
+            containerClassName="absolute inset-0"
           />
           {/* Subtle overlay */}
           <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-40 hover:opacity-10 transition-opacity" />

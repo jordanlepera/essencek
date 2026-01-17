@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2, ChevronLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { OptimizedImage } from '@/components/ui/OptimizedImage';
 import { Link } from '@/libs/I18nNavigation';
 
 type ServiceDetailProps = {
@@ -83,7 +83,7 @@ export const ServiceDetail = ({ title, description, features, image }: ServiceDe
           transition={{ duration: 0.8 }}
           className="flex-1 w-full aspect-4/5 rounded-[2.5rem] bg-accent/10 border border-primary/5 shadow-2xl overflow-hidden relative group"
         >
-          <Image
+          <OptimizedImage
             src={image}
             alt={title}
             fill
@@ -91,6 +91,7 @@ export const ServiceDetail = ({ title, description, features, image }: ServiceDe
             sizes="(max-width: 1024px) 100vw, 50vw"
             quality={90}
             priority
+            containerClassName="absolute inset-0"
           />
           {/* Subtle overlay for depth */}
           <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-60" />

@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { OptimizedImage } from '@/components/ui/OptimizedImage';
 import { cn } from '@/lib/utils';
 
 type GalleryItem = {
@@ -53,11 +54,10 @@ export const GalleryClient = ({ items }: GalleryClientProps) => {
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
         {items.map((item, index) => (
           <motion.div
-            layoutId={`card-${item.id}`}
             key={item.id}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: index * 0.05 }}
+            transition={{ delay: index * 0.05, duration: 0.4, ease: 'easeOut' }}
             onClick={() => setSelectedId(item.id)}
             className={cn(
               'relative group bg-accent/10 rounded-3xl overflow-hidden cursor-pointer break-inside-avoid shadow-sm hover:shadow-xl transition-shadow duration-500',
@@ -65,51 +65,61 @@ export const GalleryClient = ({ items }: GalleryClientProps) => {
             )}
           >
             {/* Main Image */}
-            <div className="absolute inset-0">
-              <Image
+            <div className="absolute inset-0 rounded-3xl overflow-hidden">
+              <OptimizedImage
                 src={item.image}
                 alt={t(`items.${item.key}.title` as any)}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 quality={85}
+                containerClassName="absolute inset-0"
               />
             </div>
 
             {/* Hover Content */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileHover={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className="absolute inset-0 bg-black/40 p-8 flex flex-col justify-end text-white backdrop-blur-[2px]"
-            >
+            <div className="absolute inset-0 bg-black/40 p-8 flex flex-col justify-end text-white backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="space-y-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <p className="text-xs font-semibold uppercase tracking-widest opacity-80">
                   {t(`items.${item.key}.category` as any)}
                 </p>
                 <h3 className="text-xl font-bold">{t(`items.${item.key}.title` as any)}</h3>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
         ))}
       </div>
 
       <AnimatePresence>
         {selectedId && selectedItem && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8"
+            onClick={() => setSelectedId(null)}
+          >
             {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setSelectedId(null)}
               className="absolute inset-0 bg-black/90 backdrop-blur-md"
             />
 
             {/* Lightbox Card */}
             <motion.div
-              layoutId={`card-${selectedItem.id}`}
-              className="relative w-full md:w-[95vw] md:h-[90vh] max-h-[90vh] bg-background rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row"
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              transition={{
+                type: 'spring',
+                damping: 25,
+                stiffness: 300,
+                mass: 0.8,
+              }}
+              className="relative w-full md:w-[95vw] md:h-[90vh] max-h-[90vh] bg-background rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row"
               onClick={e => e.stopPropagation()}
             >
               {/* Close Button */}
@@ -151,7 +161,7 @@ export const GalleryClient = ({ items }: GalleryClientProps) => {
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
+                transition={{ delay: 0.15, duration: 0.3 }}
                 className="flex-1 p-8 md:p-12 flex flex-col justify-center bg-background md:overflow-y-auto"
               >
                 <div className="space-y-6">
@@ -180,7 +190,7 @@ export const GalleryClient = ({ items }: GalleryClientProps) => {
                 </div>
               </motion.div>
             </motion.div>
-          </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </>

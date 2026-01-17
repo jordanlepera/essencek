@@ -137,3 +137,22 @@
     @apply bg-black/50 backdrop-blur-md border border-white/10 shadow-lg;
   }
 }
+
+/* Image loading shimmer animation - GPU accelerated, 60fps */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, oklch(1 0 0 / 15%) 50%, transparent 100%);
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+.dark .animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, oklch(1 0 0 / 8%) 50%, transparent 100%);
+}

@@ -4,7 +4,6 @@ import type { CarouselApi } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
@@ -16,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { OptimizedImage } from '@/components/ui/OptimizedImage';
 import { cn } from '@/lib/utils';
 
 export const HeroSection = () => {
@@ -81,7 +81,7 @@ export const HeroSection = () => {
             <CarouselItem key={slide.title} className="pl-0 h-[75vh] min-h-[600px] group">
               <div className="relative w-full h-full flex items-center justify-center bg-accent/20">
                 {/* Background Image - Optimized for LCP and visual quality */}
-                <Image
+                <OptimizedImage
                   src={slide.image}
                   alt={slide.title}
                   fill
@@ -89,6 +89,7 @@ export const HeroSection = () => {
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
                   sizes="100vw"
                   quality={100}
+                  containerClassName="absolute inset-0"
                 />
 
                 {/* Overlays for readability - Modern, subtle but effective */}
