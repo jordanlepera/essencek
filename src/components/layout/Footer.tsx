@@ -1,6 +1,8 @@
 'use client';
 
+import { Facebook, Instagram } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+
 import { Link } from '@/libs/I18nNavigation';
 import { AppConfig } from '@/utils/AppConfig';
 
@@ -40,12 +42,34 @@ export const Footer = () => {
           ))}
         </nav>
 
-        <div className="text-sm text-center md:text-right text-muted-foreground">
-          {`© ${new Date().getFullYear()} ${AppConfig.name}.`}
-          <br />
-          {bt.rich('made_with', {
-            author: chunks => <span className="text-primary font-medium">{chunks}</span>,
-          })}
+        <div className="flex flex-col items-center md:items-end gap-4">
+          <div className="flex items-center gap-4">
+            <a
+              href={AppConfig.socialMedia.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 duration-200"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href={AppConfig.socialMedia.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 duration-200"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+          </div>
+          <div className="text-sm text-center md:text-right text-muted-foreground">
+            {`© ${new Date().getFullYear()} ${AppConfig.name}.`}
+            <br />
+            {bt.rich('made_with', {
+              author: chunks => <span className="text-primary font-medium">{chunks}</span>,
+            })}
+          </div>
         </div>
       </div>
     </footer>

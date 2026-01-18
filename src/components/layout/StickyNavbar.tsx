@@ -1,12 +1,14 @@
 'use client';
 
 import { AnimatePresence } from 'framer-motion';
-import { Menu } from 'lucide-react';
+import { Facebook, Instagram, Menu } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Link, usePathname } from '@/libs/I18nNavigation';
+import { AppConfig } from '@/utils/AppConfig';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
 
@@ -63,7 +65,27 @@ export const StickyNavbar = () => {
 
           {/* Mobile menu trigger and Language Switcher for desktop */}
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-4">
+              <div className="flex items-center gap-3 border-r border-border/50 pr-4 mr-1">
+                <a
+                  href={AppConfig.socialMedia.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href={AppConfig.socialMedia.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </div>
               <LanguageSwitcher />
             </div>
             <Button

@@ -253,7 +253,8 @@
       "email": "The email address must be valid.",
       "phone": "The phone number must contain at least 10 digits.",
       "message": "The message must contain at least 10 characters."
-    }
+    },
+    "follow_us": "Follow us"
   },
   "Newsletter": {
     "title": "Stay Updated",
@@ -265,7 +266,9 @@
     "success_message": "You are now subscribed to our newsletter.",
     "validation_email": "Please enter a valid email address.",
     "privacy": "We respect your privacy. No spam.",
-    "close": "Close"
+    "close": "Close",
+    "section_title": "Join the community",
+    "section_description": "Subscribe to receive our new collections, maintenance tips and decor inspirations in preview."
   },
   "NotFound": {
     "title": "Page Not Found",

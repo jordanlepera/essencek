@@ -2,13 +2,15 @@
 
 import { motion } from 'framer-motion';
 
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { use } from 'react';
 
 import { SecureEmail } from '@/components/common/SecureEmail';
 import { SecurePhone } from '@/components/common/SecurePhone';
 import { ContactForm } from '@/components/contact/ContactForm';
+import { NewsletterSection } from '@/components/newsletter/NewsletterSection';
+import { AppConfig } from '@/utils/AppConfig';
 
 export default function ContactPage(props: { params: Promise<{ locale: string }> }) {
   use(props.params);
@@ -64,6 +66,30 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
                 <p className="text-xl font-bold">{t('atelier_value')}</p>
               </div>
             </div>
+
+            <div className="pt-8 border-t border-border/50">
+              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">
+                {t('follow_us')}
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href={AppConfig.socialMedia.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-primary/5 text-primary hover:bg-primary/10 transition-colors"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href={AppConfig.socialMedia.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-primary/5 text-primary hover:bg-primary/10 transition-colors"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -71,6 +97,8 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
           <ContactForm />
         </div>
       </div>
+
+      <NewsletterSection />
     </div>
   );
 }

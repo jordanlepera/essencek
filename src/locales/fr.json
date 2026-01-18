@@ -253,7 +253,8 @@
       "email": "L'adresse email doit être valide.",
       "phone": "Le numéro de téléphone doit contenir au moins 10 chiffres.",
       "message": "Le message doit contenir au moins 10 caractères."
-    }
+    },
+    "follow_us": "Suivez-nous"
   },
   "Newsletter": {
     "title": "Restez informé",
@@ -265,7 +266,9 @@
     "success_message": "Vous êtes maintenant inscrit à notre newsletter.",
     "validation_email": "Veuillez entrer une adresse email valide.",
     "privacy": "Nous respectons votre vie privée. Pas de spam.",
-    "close": "Fermer"
+    "close": "Fermer",
+    "section_title": "Rejoignez la communauté",
+    "section_description": "Inscrivez-vous pour recevoir en avant-première nos nouvelles collections, nos conseils d'entretien et nos inspirations déco."
   },
   "NotFound": {
     "title": "Page introuvable",

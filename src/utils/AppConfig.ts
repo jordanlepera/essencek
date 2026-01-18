@@ -8,4 +8,8 @@ export const AppConfig = {
   locales: ['en', 'fr'],
   defaultLocale: 'fr',
   localePrefix,
+  socialMedia: {
+    facebook: 'https://www.facebook.com/p/Lessence-K-61554656266995/',
+    instagram: 'https://www.instagram.com/l_essence_k/',
+  },
 };

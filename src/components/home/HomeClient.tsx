@@ -9,6 +9,7 @@ import { ContactForm } from '@/components/contact/ContactForm';
 import { GalleryHighlight } from '@/components/home/GalleryHighlight';
 import { HeroSection } from '@/components/home/HeroSection';
 import { ServicesSection } from '@/components/home/ServicesSection';
+import { NewsletterSection } from '@/components/newsletter/NewsletterSection';
 import { SecureEmail } from '../common/SecureEmail';
 
 export const HomeClient = (props: { params: Promise<{ locale: string }> }) => {
@@ -26,6 +27,8 @@ export const HomeClient = (props: { params: Promise<{ locale: string }> }) => {
       >
         <ServicesSection />
         <GalleryHighlight />
+
+        <NewsletterSection />
 
         {/* Revamped Contact section */}
         <section className="py-24">

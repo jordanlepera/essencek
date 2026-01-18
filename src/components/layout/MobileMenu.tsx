@@ -1,11 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { X } from 'lucide-react';
+import { Facebook, Instagram, X } from 'lucide-react';
 import { useEffect } from 'react';
+
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Link, usePathname } from '@/libs/I18nNavigation';
+import { AppConfig } from '@/utils/AppConfig';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 type MobileMenuProps = {
@@ -102,6 +104,30 @@ export const MobileMenu = ({ isOpen, onCloseAction, links }: MobileMenuProps) =>
           </motion.div>
         ))}
       </motion.nav>
+
+      <motion.div
+        variants={linkVariants}
+        className="absolute bottom-24 flex items-center gap-8"
+      >
+        <a
+          href={AppConfig.socialMedia.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 bg-secondary/30 rounded-full text-foreground hover:text-primary transition-colors hover:scale-110 active:scale-95 duration-200"
+          aria-label="Facebook"
+        >
+          <Facebook className="h-6 w-6" />
+        </a>
+        <a
+          href={AppConfig.socialMedia.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 bg-secondary/30 rounded-full text-foreground hover:text-primary transition-colors hover:scale-110 active:scale-95 duration-200"
+          aria-label="Instagram"
+        >
+          <Instagram className="h-6 w-6" />
+        </a>
+      </motion.div>
 
       <motion.div
         variants={linkVariants}
