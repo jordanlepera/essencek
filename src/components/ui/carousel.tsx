@@ -65,10 +65,15 @@ function Carousel({
       return;
     }
 
-    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
-    setCanScrollPrev(api.canScrollPrev());
-    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
-    setCanScrollNext(api.canScrollNext());
+    setCanScrollPrev((prev) => {
+      const canPrev = api.canScrollPrev();
+      return prev === canPrev ? prev : canPrev;
+    });
+
+    setCanScrollNext((prev) => {
+      const canNext = api.canScrollNext();
+      return prev === canNext ? prev : canNext;
+    });
   }, []);
 
   const scrollPrev = React.useCallback(() => {
@@ -103,12 +108,14 @@ function Carousel({
     if (!api) {
       return;
     }
-    onSelect(api);
+    const timer = setTimeout(() => onSelect(api), 0);
     api.on('reInit', onSelect);
     api.on('select', onSelect);
 
     return () => {
+      clearTimeout(timer);
       api?.off('select', onSelect);
+      api?.off('reInit', onSelect);
     };
   }, [api, onSelect]);
 

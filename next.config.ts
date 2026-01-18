@@ -12,6 +12,7 @@ const baseConfig: NextConfig = {
     qualities: [75, 100],
   },
   allowedDevOrigins: ['192.168.0.37', 'localhost', '127.0.0.1'],
+  cacheComponents: true,
 };
 
 // Initialize the Next-Intl plugin

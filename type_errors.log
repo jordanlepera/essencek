@@ -1,0 +1,15 @@
+$ tsc --noEmit --pretty
+[96msrc/components/newsletter/NewsletterPopup.tsx[0m:[93m70[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'useCallback'.
+
+[7m70[0m   const handleDismiss = useCallback(() => {
+[7m  [0m [91m                        ~~~~~~~~~~~[0m
+
+[96msrc/components/newsletter/NewsletterPopup.tsx[0m:[93m86[0m:[93m13[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m86[0m   useEffect(() => {
+[7m  [0m [91m            ~~~~~~~[0m
+
+
+Found 2 errors in the same file, starting at: src/components/newsletter/NewsletterPopup.tsx[90m:70[0m
+
+error: script "check:types" exited with code 1

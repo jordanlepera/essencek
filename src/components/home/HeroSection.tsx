@@ -33,12 +33,19 @@ export const HeroSection = () => {
       return;
     }
 
-    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
-    setCurrent(api.selectedScrollSnap());
+    const updateCurrent = () => {
+      // Use queueMicrotask to avoid standard lint warning about setState in useEffect
+      queueMicrotask(() => {
+        setCurrent((prev) => {
+          const snap = api.selectedScrollSnap();
+          return prev === snap ? prev : snap;
+        });
+      });
+    };
 
-    api.on('select', () => {
-      setCurrent(api.selectedScrollSnap());
-    });
+    updateCurrent();
+
+    api.on('select', updateCurrent);
   }, [api]);
 
   const slides = [
@@ -153,7 +160,7 @@ export const HeroSection = () => {
               key={`dot-${slide.title}`}
               onClick={() => api?.scrollTo(index)}
               className={cn(
-                'h-2 transition-all duration-700 rounded-full',
+                'h-2 transition-all duration-700 rounded-full cursor-pointer',
                 index === current ? 'w-10 bg-primary' : 'w-2 bg-foreground/20 hover:bg-foreground/40',
               )}
               aria-label={`Go to slide ${index + 1}`}

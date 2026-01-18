@@ -1,4 +1,7 @@
+'use client';
+
 import { useLocale } from 'next-intl';
+import { useEffect, useState } from 'react';
 import {
   Select,
   SelectContent,
@@ -12,10 +15,23 @@ export const LanguageSwitcher = () => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  // Delay mounting to avoid hydration mismatch with Radix UI generated IDs
+  useEffect(() => {
+    queueMicrotask(() => setMounted(true));
+  }, []);
 
   const handleValueChange = (newLocale: string) => {
     router.replace(pathname, { locale: newLocale });
   };
+
+  // Render a placeholder during SSR to avoid hydration mismatch
+  if (!mounted) {
+    return (
+      <div className="w-[140px] h-9 rounded-full bg-white/5 backdrop-blur-md border border-white/10 animate-pulse" />
+    );
+  }
 
   return (
     <Select value={locale} onValueChange={handleValueChange}>

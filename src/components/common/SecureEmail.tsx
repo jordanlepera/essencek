@@ -108,7 +108,7 @@ export const SecureEmail = ({ email, className }: SecureEmailProps) => {
 
                   <a
                     href={`mailto:${email}`}
-                    className="p-1.5 hover:bg-primary/20 rounded-lg transition-all group"
+                    className="p-1.5 hover:bg-primary/20 rounded-lg transition-all group cursor-pointer"
                     aria-label="Send email"
                   >
                     <Mail className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />

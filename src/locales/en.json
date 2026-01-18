@@ -254,5 +254,22 @@
       "phone": "The phone number must contain at least 10 digits.",
       "message": "The message must contain at least 10 characters."
     }
+  },
+  "Newsletter": {
+    "title": "Stay Updated",
+    "description": "Get our latest creations and news delivered straight to your inbox.",
+    "email_placeholder": "your@email.com",
+    "submit": "Subscribe",
+    "submitting": "Subscribing...",
+    "success_title": "Thank you!",
+    "success_message": "You are now subscribed to our newsletter.",
+    "validation_email": "Please enter a valid email address.",
+    "privacy": "We respect your privacy. No spam.",
+    "close": "Close"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "back_home": "Back to Home"
   }
 }

@@ -254,5 +254,22 @@
       "phone": "Le numéro de téléphone doit contenir au moins 10 chiffres.",
       "message": "Le message doit contenir au moins 10 caractères."
     }
+  },
+  "Newsletter": {
+    "title": "Restez informé",
+    "description": "Recevez nos dernières créations et actualités directement dans votre boîte mail.",
+    "email_placeholder": "votre@email.com",
+    "submit": "S'inscrire",
+    "submitting": "Inscription...",
+    "success_title": "Merci !",
+    "success_message": "Vous êtes maintenant inscrit à notre newsletter.",
+    "validation_email": "Veuillez entrer une adresse email valide.",
+    "privacy": "Nous respectons votre vie privée. Pas de spam.",
+    "close": "Fermer"
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "back_home": "Retour à l'accueil"
   }
 }
