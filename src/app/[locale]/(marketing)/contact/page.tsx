@@ -17,7 +17,7 @@ export default function ContactPage(props: { params: Promise<{ locale: string }>
   const t = useTranslations('Contact');
 
   return (
-    <div className="py-12 space-y-16">
+    <div className="pt-12 pb-6 space-y-16">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

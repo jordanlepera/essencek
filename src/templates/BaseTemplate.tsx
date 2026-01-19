@@ -9,7 +9,7 @@ export const BaseTemplate = (props: {
     <div className="min-h-screen flex flex-col bg-background text-foreground antialiased">
       <StickyNavbar />
 
-      <main className="flex-1 w-full max-w-7xl mx-auto px-6 pt-24 pb-12">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-6 pt-24 pb-2">
         {props.children}
       </main>
 

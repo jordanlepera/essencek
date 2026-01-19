@@ -7,7 +7,7 @@ export const NewsletterSection = () => {
   const t = useTranslations('Newsletter');
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-12 overflow-hidden mx-4 md:mx-8 rounded-3xl">
       {/* Background with gradient similar to other sections */}
       <div className="absolute inset-0 bg-primary/5 dark:bg-primary/5" />
       <div className="absolute inset-0 bg-linear-to-br from-transparent via-transparent to-primary/10" />

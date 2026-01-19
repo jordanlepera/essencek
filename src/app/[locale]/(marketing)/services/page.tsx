@@ -8,7 +8,7 @@ export default function ServicesPage() {
   const t = useTranslations('Services');
 
   return (
-    <div className="space-y-12 py-12">
+    <div className="space-y-12 pt-12 pb-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

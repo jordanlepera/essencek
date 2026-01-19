@@ -31,7 +31,7 @@ export const HomeClient = (props: { params: Promise<{ locale: string }> }) => {
         <NewsletterSection />
 
         {/* Revamped Contact section */}
-        <section className="py-24">
+        <section className="pt-24 pb-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ export const HomeClient = (props: { params: Promise<{ locale: string }> }) => {
                 <ContactForm />
               </div>
 
-              <div className="pt-8 border-t border-white/5 flex items-center gap-4 text-sm text-muted-foreground italic">
+              <div className="pt-2 border-t border-white/5 flex items-center gap-4 text-sm text-muted-foreground italic">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 {tc('response_time')}
               </div>

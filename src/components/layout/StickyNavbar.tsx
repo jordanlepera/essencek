@@ -48,7 +48,7 @@ export const StickyNavbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map(link => (
               <Link
                 key={link.href}
@@ -65,7 +65,7 @@ export const StickyNavbar = () => {
 
           {/* Mobile menu trigger and Language Switcher for desktop */}
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
               <div className="flex items-center gap-3 border-r border-border/50 pr-4 mr-1">
                 <a
                   href={AppConfig.socialMedia.facebook}
@@ -91,7 +91,7 @@ export const StickyNavbar = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="lg:hidden"
               onClick={() => setIsMobileMenuOpen(true)}
             >
               <Menu className="h-6 w-6" />
